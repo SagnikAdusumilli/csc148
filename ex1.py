@@ -144,9 +144,6 @@ class SuperDuperManager:
                 else:
                     selected_id = min(_id, selected_id)
 
-        if selected_id is not None:
-            self.move_car(selected_id, x, y)
-
 
 class Car:
     """A car in the Super system.
@@ -160,6 +157,7 @@ class Car:
     """
 
     def __init__(self, fuel):
+
         """ initialze the instance attribues
         @type self: Car
         """
@@ -175,8 +173,7 @@ class Car:
          @type y: int
         """
         # store the distance between the destination and the current location
-        dist = abs(self.position[0] - x) + abs(
-            self.position[1] - y)  # type: int
+        dist = abs(self.position[0] - x) + abs(self.position[1] - y)  # type: int
 
         if dist <= self.fuel:  # move only if there is enough fuel
             self.position[0] = x
@@ -184,6 +181,7 @@ class Car:
             self.fuel -= dist
 
     def get_position(self):
+
         """Return the grid location of the car
         @type self: Car
         @rtype: (int, int)
@@ -191,6 +189,7 @@ class Car:
         return self.position[0], self.position[1]
 
     def get_fuel(self):
+
         """Return the number of units of fuel left in the car
         @type self: Car
         @rtype: int
