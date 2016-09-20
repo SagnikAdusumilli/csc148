@@ -28,11 +28,6 @@ class TestCar(unittest.TestCase):
 
         self.manager.dispatch(12, 9)
 
-        for car in self.manager._cars:
-            print(str(self.manager.get_car_position(car))+ car)
-
-
-
 
 if __name__ == '__main__':
     unittest.main()

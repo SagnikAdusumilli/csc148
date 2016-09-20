@@ -208,4 +208,4 @@ if __name__ == '__main__':
 
     # Uncomment and run before final submission. This checks for style errors
     # in addition to code inconsistencies and forbidden Python features.
-    # python_ta.check_all()
+    python_ta.check_all()
