@@ -64,7 +64,6 @@ class SuperDuperManager:
         # Check to make sure the identifier isn't already used.
         if id_ not in self._cars:
             self._cars[id_] = Car(fuel)
-        return None
 
     def move_car(self, id_, new_x, new_y):
         """Move the car with the given id.
@@ -81,7 +80,6 @@ class SuperDuperManager:
         """
         if id_ in self._cars:
             self._cars[id_].move(new_x, new_y)
-        return None
 
     def get_car_position(self, id_):
         """Return the position of the car with the given id.
@@ -95,8 +93,6 @@ class SuperDuperManager:
         """
         if id_ in self._cars:
             return self._cars[id_].get_position()
-        else:
-            return None
 
     def get_car_fuel(self, id_):
         """Return the amount of fuel of the car with the given id.
