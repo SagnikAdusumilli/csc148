@@ -147,7 +147,7 @@ class SuperDuperManager:
 class Car:
     """A car in the Super system.
 
-    === Attributes ===
+    === Private Attributes ===
     @type _fuel: int
     keep track of the how many grids the car can move
 
