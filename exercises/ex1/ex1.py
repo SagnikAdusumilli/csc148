@@ -148,10 +148,10 @@ class Car:
     """A car in the Super system.
 
     === Attributes ===
-    @type fuel: int
+    @type _fuel: int
     keep track of the how many grids the car can move
 
-    @type position: [int,int]
+    @type _position: [int,int]
     keep track of the position of the car in the grid system
     """
 
@@ -160,8 +160,8 @@ class Car:
         @type self: Car
         """
 
-        self.fuel = fuel
-        self.position = [0, 0]
+        self._fuel = fuel
+        self._position = [0, 0]
 
     def move(self, x, y):
         """ change the car position of the car on the grid either vertially or
@@ -171,27 +171,27 @@ class Car:
          @type y: int
         """
         # store the distance between the destination and the current location
-        dist = abs(self.position[0] - x) + abs(
-            self.position[1] - y)  # type: int
+        dist = abs(self._position[0] - x) + abs(
+            self._position[1] - y)  # type: int
 
-        if dist <= self.fuel:  # move only if there is enough fuel
-            self.position[0] = x
-            self.position[1] = y
-            self.fuel -= dist
+        if dist <= self._fuel:  # move only if there is enough fuel
+            self._position[0] = x
+            self._position[1] = y
+            self._fuel -= dist
 
     def get_position(self):
         """Return the grid location of the car
         @type self: Car
         @rtype: (int, int)
         """
-        return self.position[0], self.position[1]
+        return self._position[0], self._position[1]
 
     def get_fuel(self):
         """Return the number of units of fuel left in the car
         @type self: Car
         @rtype: int
         """
-        return self.fuel
+        return self._fuel
 
 
 if __name__ == '__main__':
