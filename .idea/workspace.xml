@@ -7,6 +7,7 @@
     <list default="true" id="749951f0-cf83-490c-93ab-44f565cd01be" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exercises/ex2/ex2.py" afterPath="$PROJECT_DIR$/exercises/ex2/ex2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exercises/ex2/ex2_test.py" afterPath="$PROJECT_DIR$/exercises/ex2/ex2_test.py" />
     </list>
     <ignored path="csc148.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,48 +77,28 @@
       <file leaf-file-name="test_race.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/labs/lab2/test_race.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
+            <state relative-caret-position="324">
               <caret line="28" column="57" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="google_distances.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assignments/Assignment1/google_distances.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ex2.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ex2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exercises/ex2/ex2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-162">
-              <caret line="231" column="74" selection-start-line="231" selection-start-column="74" selection-end-line="231" selection-end-column="74" />
+            <state relative-caret-position="251">
+              <caret line="255" column="23" selection-start-line="255" selection-start-column="23" selection-end-line="255" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="case.py" pinned="false" current-in-tab="false">
-        <entry file="file:///local/packages/python-3.5.2/lib/python3.5/unittest/case.py">
+      <file leaf-file-name="ex2_test.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/exercises/ex2/ex2_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10782">
-              <caret line="599" column="0" selection-start-line="599" selection-start-column="0" selection-end-line="599" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ex1_test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exercises/ex1/ex1_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="252">
+              <caret line="47" column="55" selection-start-line="47" selection-start-column="55" selection-end-line="47" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -157,6 +138,7 @@
         <option value="$PROJECT_DIR$/labs/lab2/Runner.py" />
         <option value="$PROJECT_DIR$/labs/lab2/Race.py" />
         <option value="$PROJECT_DIR$/labs/lab2/test_race.py" />
+        <option value="$PROJECT_DIR$/exercises/ex2/ex2_test.py" />
         <option value="$PROJECT_DIR$/exercises/ex2/ex2.py" />
       </list>
     </option>
@@ -297,47 +279,14 @@
     <option name="myIpythonEnabled" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/exercises/ex2" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.google_distances">
-    <configuration default="false" name="ex1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exercises/ex1" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="csc148" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exercises/ex1/ex1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exercises/ex1" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="csc148" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exercises/ex1/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests in ex2_test">
     <configuration default="false" name="google_distances" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -395,6 +344,49 @@
       <option name="METHOD_NAME" value="test_add_runner" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Doctest reverse_top_two" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exercises/ex2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="csc148" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exercises/ex2/ex2.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="reverse_top_two" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_FUNCTION" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in ex2_test" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exercises/ex2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="csc148" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exercises/ex2/ex2_test.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
       <option name="PUREUNITTEST" value="true" />
@@ -547,19 +539,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.ex1" />
-      <item index="1" class="java.lang.String" itemvalue="Python.test" />
-      <item index="2" class="java.lang.String" itemvalue="Python.google_distances" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in Test_Race" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest Test_Race.test_add_runner" />
+      <item index="0" class="java.lang.String" itemvalue="Python.google_distances" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in Test_Race" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest Test_Race.test_add_runner" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Doctest reverse_top_two" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in ex2_test" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in Test_Race" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest Test_Race.test_add_runner" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in ex2_test" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Doctest reverse_top_two" />
         <item index="2" class="java.lang.String" itemvalue="Python.google_distances" />
-        <item index="3" class="java.lang.String" itemvalue="Python.test" />
-        <item index="4" class="java.lang.String" itemvalue="Python.ex1" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in Test_Race" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest Test_Race.test_add_runner" />
       </list>
     </recent_temporary>
   </component>
@@ -580,20 +572,17 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_Test_Race - 2016.09.23 at 17h 44m 59s.xml">
-      <configuration name="Unittests in Test_Race" configurationId="tests" />
+    <history-entry file="Doctest_reverse_top_two - 2016.09.27 at 19h 02m 36s.xml">
+      <configuration name="Doctest reverse_top_two" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_Test_Race - 2016.09.23 at 17h 47m 30s.xml">
-      <configuration name="Unittests in Test_Race" configurationId="tests" />
+    <history-entry file="Doctest_reverse_top_two - 2016.09.27 at 19h 03m 43s.xml">
+      <configuration name="Doctest reverse_top_two" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_Test_Race - 2016.09.23 at 17h 50m 13s.xml">
-      <configuration name="Unittests in Test_Race" configurationId="tests" />
+    <history-entry file="Doctest_reverse_top_two - 2016.09.27 at 19h 05m 40s.xml">
+      <configuration name="Doctest reverse_top_two" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_Test_Race - 2016.09.23 at 17h 50m 32s.xml">
-      <configuration name="Unittests in Test_Race" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_Test_Race - 2016.09.23 at 17h 51m 00s.xml">
-      <configuration name="Unittests in Test_Race" configurationId="tests" />
+    <history-entry file="Doctest_reverse_top_two - 2016.09.27 at 19h 06m 28s.xml">
+      <configuration name="Doctest reverse_top_two" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_Test_Race - 2016.09.23 at 17h 51m 41s.xml">
       <configuration name="Unittests in Test_Race" configurationId="tests" />
@@ -610,6 +599,9 @@
     <history-entry file="Unittests_in_Test_Race - 2016.09.23 at 18h 08m 47s.xml">
       <configuration name="Unittests in Test_Race" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_ex2_test - 2016.09.27 at 19h 06m 32s.xml">
+      <configuration name="Unittests in ex2_test" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -622,14 +614,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="-3" width="1926" height="1039" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16471216" sideWeight="0.49760765" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930514" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3300813" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6692825" sideWeight="0.5014675" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5044843" sideWeight="0.4985325" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5044843" sideWeight="0.4985325" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32977304" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.3301105" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" x="-96" y="763" width="3100" height="478" />
@@ -702,14 +694,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/labs/lab2/Runner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="954">
-          <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/labs/lab2/test_race.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1021,14 +1005,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/labs/lab2/test_race.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="57" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assignments/Assignment1/google_distances.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1037,10 +1013,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/labs/lab2/test_race.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="28" column="57" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/exercises/ex2/ex2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-162">
-          <caret line="231" column="74" selection-start-line="231" selection-start-column="74" selection-end-line="231" selection-end-column="74" />
+        <state relative-caret-position="251">
+          <caret line="255" column="23" selection-start-line="255" selection-start-column="23" selection-end-line="255" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exercises/ex2/ex2_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="47" column="55" selection-start-line="47" selection-start-column="55" selection-end-line="47" selection-end-column="55" />
           <folding />
         </state>
       </provider>

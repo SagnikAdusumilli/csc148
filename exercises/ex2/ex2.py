@@ -250,8 +250,10 @@ def reverse_top_two(stack):
     >>> stack.pop()
     2
     """
-    # TODO: implement this function after you've read about Stacks.
-    pass
+    element1 = stack.pop()
+    element2 = stack.pop()
+    stack.push(element1)
+    stack.push(element2)
 
 
 if __name__ == '__main__':

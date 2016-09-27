@@ -59,7 +59,7 @@ class ReverseTopTwoTest(unittest.TestCase):
         reverse_top_two(stack)
         self.assertEqual(stack.pop(), 1)
         self.assertEqual(stack.pop(), 2)
-        self.assertTrue(stack.is_empty())
+        self.assertEqual(stack.is_empty(), [])
 
 
 if __name__ == '__main__':
