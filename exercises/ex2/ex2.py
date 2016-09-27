@@ -24,7 +24,7 @@ Notes:
 """
 # You will find these imports useful. Please do not import any others.
 from math import sqrt  # sqrt used to calculate diagonal distances
-import random          # used to generate random numbers
+import random  # used to generate random numbers
 
 
 ##############################################################################
@@ -39,6 +39,7 @@ class SuperDuperManager:
         For example, _vehicles['a01'] would be a vehicle corresponding to
         the id_ 'a01'.
     """
+
     def __init__(self):
         """Initialize a new SuperDuperManager.
 
@@ -138,18 +139,18 @@ class Vehicle:
     === Representation invariants ===
     - fuel >= 0
     """
-    def __init__(self, new_fuel, new_position):
+
+    def __init__(self, new_fuel):
         """Initialize a new Vehicle with the given fuel and position.
 
         Precondition: new_fuel >= 0
 
         @type self: Vehicle
         @type new_fuel: int
-        @type new_position: (int, int)
         @rtype: None
         """
         self.fuel = new_fuel
-        self.position = new_position
+        self.position = (0, 0)
 
     def fuel_needed(self, new_x, new_y):
         """Return how much fuel would be used to move to the given position.
@@ -180,30 +181,52 @@ class Vehicle:
             self.fuel -= needed
 
 
-# TODO: Implement this class (you can use your work from Exercise 1)
 class Car(Vehicle):
     """A car in the Super Duper system.
 
     A car can only move vertically and horizontally, and uses
     one unit of fuel per unit distance travelled.
     """
-    pass
+
+    def fuel_needed(self, new_x, new_y):
+        return float(
+            abs(new_x - self.position[0]) + abs(new_y - self.position[1]))
 
 
-# TODO: Implement this class. Note: We've imported the sqrt function for you.
 class Helicopter(Vehicle):
     """A helicopter. Can travel diagonally between points."""
-    pass
+
+    def __init__(self, fuel):
+        super.__init__(fuel)
+        self.position = (3, 5)
+
+    def fuel_needed(self, new_x, new_y):
+        return sqrt((new_x - self.position[0]) ** 2 +
+                    (new_y - self.position[1]) ** 2)
 
 
-# TODO: Implement this class. Note: We've imported the random module for you.
 class UnreliableMagicCarpet(Vehicle):
     """An unreliable magic carpet.
 
     Does not need to use fuel to travel, but ends up in a random position
     within two horizontal and vertical units from the target destination.
     """
-    pass
+
+    def __init__(self, new_fuel):
+        super.__init__(new_fuel)
+        # for randint, the upper limit is inclusive
+        self.position = (random.randint(0, 10),
+                         random.randint(0, 10))
+
+    def fuel_needed(self, new_x, new_y):
+        return 0.0
+
+    def move(self, new_x, new_y):
+        dX = random.randint(-2, 2)
+        dY = random.randint(-2, 2)
+
+        self.position = (new_x + dX,
+                         new_y + dY)
 
 
 ##############################################################################
@@ -230,11 +253,13 @@ def reverse_top_two(stack):
     # TODO: implement this function after you've read about Stacks.
     pass
 
+
 if __name__ == '__main__':
     # Run python_ta to ensure this module passes all checks for
     # code inconsistencies and forbidden Python features.
     # Useful for debugging!
     import python_ta
+
     python_ta.check_errors(config='.pylintrc')
 
     # Uncomment and run before final submission. This checks for style errors
