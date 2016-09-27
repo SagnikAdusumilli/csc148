@@ -197,7 +197,7 @@ class Helicopter(Vehicle):
     """A helicopter. Can travel diagonally between points."""
 
     def __init__(self, fuel):
-        super.__init__(fuel)
+        super(Helicopter,self).__init__(fuel)
         self.position = (3, 5)
 
     def fuel_needed(self, new_x, new_y):
@@ -213,7 +213,7 @@ class UnreliableMagicCarpet(Vehicle):
     """
 
     def __init__(self, new_fuel):
-        super.__init__(new_fuel)
+        super(UnreliableMagicCarpet,self).__init__(new_fuel)
         # for randint, the upper limit is inclusive
         self.position = (random.randint(0, 10),
                          random.randint(0, 10))

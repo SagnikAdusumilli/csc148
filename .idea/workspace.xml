@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="749951f0-cf83-490c-93ab-44f565cd01be" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/exercises/ex2/.hypothesis/examples/41630623ab6698bc/f5be79f990600b10" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/exercises/ex2/.hypothesis/examples/5c90c5d4a6b41ae2/5b1880eca26bf90f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/exercises/ex2/.hypothesis/examples/5c90c5d4a6b41ae2/7af3364856e205e2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/exercises/ex2/.hypothesis/examples/5c90c5d4a6b41ae2/ce8c6c637eec4212" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/exercises/ex2/.hypothesis/examples/5c90c5d4a6b41ae2/f85f3c872d179437" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/exercises/ex2/.hypothesis/examples/5c90c5d4a6b41ae2/ff9ecb142f4beaca" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exercises/ex2/ex2.py" afterPath="$PROJECT_DIR$/exercises/ex2/ex2.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exercises/ex2/ex2_test.py" afterPath="$PROJECT_DIR$/exercises/ex2/ex2_test.py" />
     </list>
     <ignored path="csc148.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,7 +61,7 @@
       <file leaf-file-name="Race.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/labs/lab2/Race.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1404">
+            <state relative-caret-position="827">
               <caret line="78" column="34" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
               <folding />
             </state>
@@ -67,7 +71,7 @@
       <file leaf-file-name="Runner.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/labs/lab2/Runner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="954">
+            <state relative-caret-position="827">
               <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
               <folding />
             </state>
@@ -84,21 +88,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ex2.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ex2.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/exercises/ex2/ex2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="255" column="23" selection-start-line="255" selection-start-column="23" selection-end-line="255" selection-end-column="23" />
+            <state relative-caret-position="-198">
+              <caret line="199" column="29" selection-start-line="199" selection-start-column="29" selection-end-line="199" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ex2_test.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ex2_test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exercises/ex2/ex2_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="47" column="55" selection-start-line="47" selection-start-column="55" selection-end-line="47" selection-end-column="55" />
+            <state relative-caret-position="468">
+              <caret line="47" column="54" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -584,12 +588,6 @@
     <history-entry file="Doctest_reverse_top_two - 2016.09.27 at 19h 06m 28s.xml">
       <configuration name="Doctest reverse_top_two" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_Test_Race - 2016.09.23 at 17h 51m 41s.xml">
-      <configuration name="Unittests in Test_Race" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_Test_Race - 2016.09.23 at 17h 53m 52s.xml">
-      <configuration name="Unittests in Test_Race" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_Test_Race - 2016.09.23 at 18h 06m 28s.xml">
       <configuration name="Unittests in Test_Race" configurationId="tests" />
     </history-entry>
@@ -600,6 +598,12 @@
       <configuration name="Unittests in Test_Race" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_ex2_test - 2016.09.27 at 19h 06m 32s.xml">
+      <configuration name="Unittests in ex2_test" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_ex2_test - 2016.09.27 at 19h 14m 33s.xml">
+      <configuration name="Unittests in ex2_test" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_ex2_test - 2016.09.27 at 19h 19m 36s.xml">
       <configuration name="Unittests in ex2_test" configurationId="tests" />
     </history-entry>
   </component>
@@ -989,22 +993,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/labs/lab2/Runner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="954">
-          <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labs/lab2/Race.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1404">
-          <caret line="78" column="34" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assignments/Assignment1/google_distances.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1021,18 +1009,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exercises/ex2/ex2.py">
+    <entry file="file://$PROJECT_DIR$/labs/lab2/Runner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="255" column="23" selection-start-line="255" selection-start-column="23" selection-end-line="255" selection-end-column="23" />
+        <state relative-caret-position="827">
+          <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/exercises/ex2/ex2_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="47" column="55" selection-start-line="47" selection-start-column="55" selection-end-line="47" selection-end-column="55" />
+        <state relative-caret-position="468">
+          <caret line="47" column="54" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labs/lab2/Race.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="827">
+          <caret line="78" column="34" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exercises/ex2/ex2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-198">
+          <caret line="199" column="29" selection-start-line="199" selection-start-column="29" selection-end-line="199" selection-end-column="29" />
           <folding />
         </state>
       </provider>
