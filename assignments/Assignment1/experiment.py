@@ -30,7 +30,9 @@ class SchedulingExperiment:
        is.
     4. Report the statistics from the experiment.
 
-    TODO: Complete this class docstring with any missing information.
+    === Private Attribues===
+    @type _map: DistanceMap
+    store all the data read from the map file
     """
     def __init__(self, config):
         """Initialize a new experiment from a configuration dictionary.
@@ -43,8 +45,9 @@ class SchedulingExperiment:
             the data files and algorithm configuration to use.
         @rtype: None
         """
+
         # TODO: Implement this method!
-        pass
+        self._map = DistanceMap(read_distance_map(config['map_file']))
 
     def run(self, report=False):
         """Run the experiment and return statistics on the outcome.
@@ -122,16 +125,17 @@ def read_parcels(parcel_file):
 
 
 def read_distance_map(distance_map_file):
-    """Read distance data from <distance_map_file> and return XXXX
+    """Read distance data from <distance_map_file> and return a dictionary
+    where the key is the start and end city pair and value is the distance between them
 
     @type distance_map_file: str
         The name of a file containing distance data in the form specified in
         Assignment 1.
-    @rtype: XXXX
+    @rtype: {(str,str), int}
 
     TODO: Complete this docstring.
     """
-    # TODO: Initialize some helpful variables.
+    data = {}
 
     with open(distance_map_file, 'r') as file:
         for line in file:
@@ -139,9 +143,9 @@ def read_distance_map(distance_map_file):
             c1 = tokens[0].strip()
             c2 = tokens[1].strip()
             dist = int(tokens[2].strip())
-            # TODO: Do something with c1, c2, and dist.
-
-    # TODO: Return something
+            data[(c1, c2)] = dist
+    print(data)
+    return data
 
 
 def read_trucks(truck_file, depot_location):

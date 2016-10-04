@@ -21,7 +21,7 @@ def main():
 
     # Set constants controlling parcel data
     num_ids_to_pick_from = 5000
-    num_ids = 1500
+    num_ids = 10
     cities = ['Belleville', 'Guelph', 'Hamilton', 'Toronto']
     min_volume = 1
     max_volume = 35
@@ -43,7 +43,7 @@ def main():
 
     # Set constants controlling truck data
     num_ids_to_pick_from = 1000
-    num_ids = 100
+    num_ids = 2
     min_volume = 50
     max_volume = 200
 

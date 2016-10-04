@@ -4,8 +4,10 @@ This module contains all of the classes required to represent the entities
 in the experiment, including at least a class Parcel and a class Truck.
 """
 
-# TODO: Implement class Parcel, class Truck, and perhaps other classes to
-# represent the entities in the experiment..
+class Truck:
+    pass
+class Parcel:
+    pass
 
 if __name__ == '__main__':
     import python_ta

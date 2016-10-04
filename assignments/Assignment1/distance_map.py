@@ -11,8 +11,24 @@ Do not import any modules here.
 
 
 class DistanceMap:
-    # TODO: Implement this class!
-    pass
+    """store the distances between cities present in the map data file
+
+    === private attribues ===
+    @type _map: {(str,str),int}
+    Map the start city and end city to the distance from start city to end city
+
+    === repersation invariants ===
+    the data must contain atleast two cities
+    """
+
+    def __init__(self, data):
+        """initialze the map
+        @type self: DistanceMap
+        @type data: {(str,str),int}
+        @rtype: None
+        """
+
+
 
 
 if __name__ == '__main__':

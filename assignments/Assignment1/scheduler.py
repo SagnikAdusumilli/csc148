@@ -16,6 +16,7 @@ from random import shuffle, choice
 from container import PriorityQueue
 
 
+
 class Scheduler:
     """A scheduler, capable of deciding what parcels go onto which trucks, and
     what route each truck will take.
@@ -54,7 +55,13 @@ class Scheduler:
         """
         raise NotImplementedError
 
-# TODO: Implement classes RandomScheduler and GreedyScheduler.
+class RandomScheduler(Scheduler):
+    def schedule(self, parcels, trucks, verbose=False):
+        pass
+
+class GreedyScheduler(Scheduler):
+    def schedule(self, parcels, trucks, verbose=False):
+        pass
 
 
 if __name__ == '__main__':
