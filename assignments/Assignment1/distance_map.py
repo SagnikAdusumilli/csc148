@@ -26,13 +26,31 @@ class DistanceMap:
         @type self: DistanceMap
         @type data: {(str,str),int}
         @rtype: None
+        >>> map = DistanceMap({('a', 'b'): 2})
+        >>> map._map
+        {('a', 'b'): 2}
         """
+        self._map = data
 
+    def get_distance(self, start_city, end_city):
+        """ return the distance between <start_city> and <end_city>
+        if no distance if found, return null
+        @type start_city: str
+        @type end_city: str
+        @rtype: int|None
 
+        >>> map2 = DistanceMap({('a', 'b'): 2})
+        >>> map2.get_distance('a','b')
+        2
+        >>> map2.get_distance('b','c')
+        """
+        return self._map.get((start_city, end_city))
 
 
 if __name__ == '__main__':
     import doctest
+
     doctest.testmod()
     import python_ta
+
     python_ta.check_all(config='.pylintrc')

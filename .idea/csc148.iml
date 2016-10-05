@@ -39,7 +39,7 @@
       <sourceFolder url="file://$MODULE_DIR$/assignments" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/assignments/Assignment1" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.5.2 (C:\Users\Sagnik\AppData\Local\Programs\Python\Python35-32\python.exe)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.5.2 (/local/packages/python-3.5.2/bin/python3.5)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="PackageRequirementsSettings">
