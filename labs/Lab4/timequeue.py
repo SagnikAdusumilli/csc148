@@ -32,12 +32,29 @@ def profile_enqueue(queue_size, n):
     @type n: int
     @rtype: float
     """
-    # TODO: Make a list containing <n> queues of size <queue_size>.
+    queues = []
+    for j in range(0,n-1):
+        q = Queue()
+        for i in range(0,queue_size-1):
+            q.enqueue(i)
+        queues.append(q)
 
-    # TODO: For each of the <n> queues, enqueue a single item.
-    # (Wrap the code in a Timer to measure the total time taken.)
+    times = []
 
-    # TODO: Return the average time taken.
+    for item in queues:
+        with Timer('enqueue') as timer:
+         item.enqueue(1)
+
+        times.append(timer)
+
+    sum =0
+    for time in times:
+        sum += time.interval
+
+    return float(sum/len(times))
+
+
+
 
 
 def profile_dequeue(queue_size, n):
@@ -48,11 +65,28 @@ def profile_dequeue(queue_size, n):
     @type n: int
     @rtype: float
     """
-    # TODO: Complete this function in the same way as profile_enqueue.
+    queues = []
+    for j in range(0, n - 1):
+        q = Queue()
+        for i in range(0, queue_size - 1):
+            q.enqueue(i)
+        queues.append(q)
 
+    times = []
 
+    for item in queues:
+        with Timer('enqueue') as timer:
+            item.dequeue()
+
+        times.append(timer)
+
+    sum = 0
+    for time in times:
+        sum += time.interval
+
+    return float(sum / len(times))
 if __name__ == '__main__':
-    # TODO: Profile enqueue and dequeue on various queue sizes.
     # We recommend having queue sizes in the 10 000's to see some
     # noticeable growth in the time taken.
+    print(profile_dequeue(10000, 10))
     pass

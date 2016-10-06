@@ -22,15 +22,18 @@ class Queue:
     When removing an item from the queue, the one which was added first
     is removed.
 
-    # TODO: Add private attribute(s) here!
+   ==== Private attributes ===
+   @type _items: []
+   stores the items of the qeue
     """
+
     def __init__(self):
         """Initialize a new empty queue.
 
         @type self: Queue
         @rtype: None
         """
-        pass
+        self._items = []
 
     def is_empty(self):
         """Return whether this queue is empty.
@@ -38,7 +41,10 @@ class Queue:
         @type self: Queue
         @rtype: bool
         """
-        pass
+        if len(self._items) == 0:
+            return True
+        else:
+            return False
 
     def enqueue(self, item):
         """Add <item> to the back of this queue.
@@ -47,7 +53,7 @@ class Queue:
         @type item: object
         @rtype: None
         """
-        pass
+        self._items.append(item)
 
     def dequeue(self):
         """Remove and return the item at the front of this queue.
@@ -55,24 +61,29 @@ class Queue:
         TODO: make sure to specify what will happen when the queue is empty.
 
         @type self: Queue
-        @rtype: object
+        @rtype: Object
         """
-        pass
+        return self._items.pop(0)
 
 
 def product(integer_queue):
-    """Remove all items in <integer_queue> and return their product.
+    """Remove all items in <integer_queue> and return their result.
 
     Precondition: <integer_queue> contains only integers.
 
     @type integer_queue: Queue
     @rtype: int
     """
-    pass
+    result = 1
+
+    while not integer_queue.is_empty():
+        result *= integer_queue.dequeue()
+
+    return result
 
 
 def product_star(integer_queue):
-    """Return the product of integers in <integer_queue>.
+    """Return the result of integers in <integer_queue>.
 
     Leave <integer_queue> unchanged when this function returns.
 
@@ -81,7 +92,17 @@ def product_star(integer_queue):
     @type integer_queue: Queue
     @rtype: int
     """
-    pass
+    q2 = Queue()
+    result = 1
+    while not integer_queue.is_empty():
+        item = integer_queue.dequeue()
+        result *= item
+        q2.enqueue(item)
+
+    while not q2.is_empty():
+        integer_queue.enqueue(q2.dequeue())
+
+    return result
 
 
 if __name__ == '__main__':
