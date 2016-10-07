@@ -13,11 +13,11 @@
       <sourceFolder url="file://$MODULE_DIR$/exercises/ex1" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/exercises/ex2" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/exercises/ex3" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/exercises/ex4" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/exercises/ex3" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/exercises/ex5" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/assignments/a1" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/assignments/a2" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/labs/lab4" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/labs/Lab4" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/labs/lab1" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/misc" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/lectures/week1" isTestSource="false" />
@@ -38,7 +38,6 @@
       <sourceFolder url="file://$MODULE_DIR$/exercises/ex6" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/assignments" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/assignments/Assignment1" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/labs/Lab4" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.5.2 (/local/packages/python-3.5.2/bin/python3.5)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
