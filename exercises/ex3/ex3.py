@@ -93,22 +93,42 @@ def merge_alternating(stack1, stack2):
     >>> merged.is_empty()
     True
     >>> s1.is_empty()
-    True
+    False
     >>> s2.is_empty()
-    True
+    False
     """
     merged_stack = Stack()
 
-    reverse(stack1)
-    reverse(stack2)
+    copy1 = copy_stack(stack1)
+    copy2 = copy_stack(stack2)
 
-    while not stack1.is_empty() and not stack2.is_empty():
+    reverse(copy1)
+    reverse(copy2)
 
-        merged_stack.push(stack2.pop())
-        merged_stack.push(stack1.pop())
+    while not copy2.is_empty() and not copy1.is_empty():
 
+        merged_stack.push(copy2.pop())
+        merged_stack.push(copy1.pop())
 
     return merged_stack
+
+
+def copy_stack(stack):
+    """copy all the elements of the statck and return the copy
+    @type stack: Stack
+    """
+    copy = Stack()
+    temp = Stack()
+
+    while not stack.is_empty():
+        temp.push(stack.pop())
+
+    while not temp.is_empty():
+        element = temp.pop()
+        copy.push(element)
+        stack.push(element)
+
+    return copy
 
 
 ##############################################################################
