@@ -32,8 +32,10 @@ class SchedulingExperiment:
 
     === Private Attribues===
     @type _map: DistanceMap
-    store all the data read from the map file
+    @type _trucks: [Trucks]
+    @type _parcles: [parcels]
     """
+
     def __init__(self, config):
         """Initialize a new experiment from a configuration dictionary.
 
@@ -46,8 +48,17 @@ class SchedulingExperiment:
         @rtype: None
         """
 
-        # TODO: Implement this method!
+        # initialize map
         self._map = DistanceMap(read_distance_map(config['map_file']))
+
+        # initialize trucks
+        self._trucks = read_trucks(config['truck_file'],
+                                   config['depot_location'])
+
+        #initialize the priority queues according to the config file
+
+        # initialize parcels
+        self._parcles = read_parcels(config['parcel_file'])
 
     def run(self, report=False):
         """Run the experiment and return statistics on the outcome.
@@ -106,11 +117,9 @@ def read_parcels(parcel_file):
     @type parcel_file: str
         The name of a file containing parcel data in the form specified in
         Assignment 1.
-    @rtype: XXXX
-
-    TODO: Complete this docstring.
+    @rtype: [Parcel]
     """
-    # TODO: Initialize some helpful variables.
+    parcels = []
 
     with open(parcel_file, 'r') as file:
         for line in file:
@@ -119,9 +128,9 @@ def read_parcels(parcel_file):
             source = tokens[1].strip()
             destination = tokens[2].strip()
             volume = int(tokens[3].strip())
-            # TODO: Do something with pid, source, destination and volume.
+            parcels.append(Parcel(pid, source, destination, volume))
 
-    # TODO: Return something.
+    return parcels
 
 
 def read_distance_map(distance_map_file):
@@ -157,19 +166,19 @@ def read_trucks(truck_file, depot_location):
     @type depot_location: str
         The city where all the trucks (and packages) are at the start of the
         experiment.
-    @rtype: XXXX
-
-    TODO: Complete this docstring.
+    @rtype: [Truck]
     """
-    # TODO: Initialize some helpful variables.
+    truck_list = []
 
     with open(truck_file, 'r') as file:
         for line in file:
             tokens = line.strip().split(',')
             tid = int(tokens[0])
             capacity = int(tokens[1])
-            # TODO: Do something with tid and capacity.
-    # TODO: Do something with
+
+            truck_list.append(Truck(tid, capacity, depot_location))
+
+    return truck_list
 
 
 def sanity_check(config_file):
@@ -191,8 +200,10 @@ def sanity_check(config_file):
     experiment = SchedulingExperiment(configuration)
     experiment.run(report=True)
 
+
 if __name__ == '__main__':
     import python_ta
+
     python_ta.check_all(config='.pylintrc')
 
     # ------------------------------------------------------------------------

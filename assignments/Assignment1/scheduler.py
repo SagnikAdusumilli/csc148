@@ -16,7 +16,6 @@ from random import shuffle, choice
 from container import PriorityQueue
 
 
-
 class Scheduler:
     """A scheduler, capable of deciding what parcels go onto which trucks, and
     what route each truck will take.
@@ -26,6 +25,7 @@ class Scheduler:
     You may add *private* methods to this class so make them available to both
     subclasses.
     """
+
     def schedule(self, parcels, trucks, verbose=False):
         """Schedule the given parcels onto the given trucks.
 
@@ -55,17 +55,23 @@ class Scheduler:
         """
         raise NotImplementedError
 
-    def _get_eligibleTrucks(self, parcel, trucks):
+    def _get_eligible_trucks(self, parcel, trucks):
         """Retrun a list of trucks which can carry the parcel
         @type self: Scheduler
         @type parcel: Parcel
         @type trucks: [Truck]
         @rtype [Truck]
         """
-        raise NotImplementedError
+        list = []
+        for truck in trucks:
+            if truck.get_volume() <= parcel.get_volume():
+                list.append(parcel)
+
+        return list
 
 
 class RandomScheduler(Scheduler):
+    """Process the parcel in random order and assign to random truck"""
 
     def schedule(self, parcels, trucks, verbose=False):
 
@@ -73,7 +79,8 @@ class RandomScheduler(Scheduler):
         not_used_parcels = []
 
         for parcel in parcels:
-            eligible_trucks = self._get_eligibleTrucks(parcel, trucks)
+            eligible_trucks = Scheduler._get_eligible_trucks(self,
+                                                             parcel, trucks)
 
             if len(eligible_trucks) == 0:
                 not_used_parcels.append(parcel)
@@ -84,31 +91,71 @@ class RandomScheduler(Scheduler):
         return not_used_parcels
 
 
-
-
-    def _get_eligibleTrucks(self, parcel, trucks):
-        list = []
-        for truck in trucks:
-            if truck.get_volume()<=parcel.get_volume() :
-                list.append(parcel)
-
-        return list
-
 class GreedyScheduler(Scheduler):
+    """Process each parcel accoring to priority
+    of the truck and parcel queues
+
+    === Private attribues ===
+    @type _t_queue: PriorityQueue
+    priority queue for sorting the trucks
+
+    @type _p_queue: PriorityQueue
+    priority queue for sorting the parcles
+    """
+
+    # specify the types of priority qeue
+    # for truck and parcel
+    def __init__(self, truck_queue, parcel_queue):
+        """
+        @type self: GreedyScheduler
+        @type truck_queue: PriorityQueue
+        @type parcel_queue: PriorityQueue
+        """
+        self._t_queue = truck_queue
+        self._p_queue = parcel_queue
 
     def schedule(self, parcels, trucks, verbose=False):
-        pass
 
-    def _get_eligibleTrucks(self, parcel, trucks):
-        pass
+        not_used_parcels = []
 
+        # sort the parcels according to priority
+        for parcel in parcels:
+            self._p_queue.add(parcel)
 
+        # get eligible trucks for each parcle
+        for parcel in parcels:
+            eligible_trucks = self._get_eligible_trucks(parcel, trucks)
 
+            if eligible_trucks == []:
+                not_used_parcels.append(parcel)
+            else:
+                # sort trucks according to priority
+                for truck in eligible_trucks:
+                    self._t_queue.add(truck)
 
+                chosen_truck = self._t_queue.remove()
+                chosen_truck.load(parcel)
+
+        return not_used_parcels
+
+    def _get_eligible_trucks(self, parcel, trucks):
+
+        # filter all the trucks with enough volume
+        volume_eligible = Scheduler._get_eligible_trucks(self, parcel, trucks)
+
+        city_eligible = []
+        for truck in volume_eligible:
+            if parcel.get_destination() in truck.get_route():
+                city_eligible.append(parcel)
+
+        if city_eligible == []:
+            return volume_eligible
 
 
 if __name__ == '__main__':
     import doctest
+
     doctest.testmod()
     import python_ta
+
     python_ta.check_all(config='.pylintrc')

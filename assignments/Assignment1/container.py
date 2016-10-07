@@ -12,6 +12,7 @@ class Container:
 
     This is an abstract class.  Only child classes should be instantiated.
     """
+
     def add(self, item):
         """Add <item> to this Container.
 
@@ -113,12 +114,6 @@ class PriorityQueue(Container):
                     self._queue.insert(i, item)
                     break
 
-
-
-
-
-
-
     def remove(self):
         """Remove and return the next item from this PriorityQueue.
 
@@ -171,6 +166,8 @@ class PriorityQueue(Container):
 
 if __name__ == '__main__':
     import doctest
+
     doctest.testmod()
     import python_ta
+
     python_ta.check_all(config='.pylintrc')

@@ -10,9 +10,12 @@ from distance_map import DistanceMap
 class Truck:
     """ Truck used in the experiments
 
-    === private attribues ===
+    === attribues ===
     @type depot: str
+
+    === private attribues ===
     @type _volume: int
+    @type __initial_volume: int
     @type _id: int
     @type _route: [str]
     @type _distance_travelled: int
@@ -20,6 +23,7 @@ class Truck:
     === repersentation invarainat ===
     depot must be constant
     _volume >= 0
+    __initial_volume must be constant
     """
 
     def __init__(self, id_, volume, depot):
@@ -29,6 +33,7 @@ class Truck:
         """
         self._id = id_
         self._volume = volume
+        self.__initial_volume = volume
         self._route = []
         self.depot = depot
         self._distance_travelled = 0
@@ -46,6 +51,12 @@ class Truck:
         @rtype: int
         """
         return self._volume
+
+    def get_initial_volume(self):
+        """Return the inital volume of the truck
+        @rtype: int
+        """
+        return self.__initial_volume
 
     def get_route(self):
         """Return the route of the truck
@@ -173,6 +184,66 @@ class Parcel:
         @rtype str
         """
         return self._destination
+
+
+def create_priority_parcle(compare_value, order):
+    """Return a method for _less_than method in PriorityQueue
+    based on the given priorities (<cmpare_values>, order)
+    @type compare_value: str
+    what will be compared (volume or city names)
+
+    @type order: str
+    non-decreasing or non-increasing
+
+    @rtype: Callable[[Object, Object]]
+    """
+
+    if compare_value == 'volume':
+        if order == 'non-decreaing':
+            def bigger_than(item1, item2):
+                """ Return True if volume of <item1> is bigger than
+                the volume of <item2>
+                @type item1: Parcel|Truck
+                @type item2: Parcel|Truck
+                @rtype: bool
+                """
+                return item1.get_volume() > item2.get_volume()
+
+            return bigger_than
+        else:
+            def smaller_than(item1, item2):
+                """ Return True if volume of <item1> is bigger than
+                the volume of <item2>
+                @type item1: Parcel|Truck
+                @type item2: Parcel|Truck
+                @rtype: bool
+                """
+                return item1.get_volume() < item2.get_volume()
+
+            return smaller_than
+    else:
+        if order == 'non-decreaing':
+            def bigger_than(parcel1, parcel2):
+                """ Return True if desination's name of <parcel1> is bigger than
+                the desnination's of <parcel2>
+                @type parcel1: Parcel
+                @type parcel2: Parcel
+                @rtype: bool
+                """
+                return len(parcel1.get_destination()) > len(parcel2.get_destination())
+
+            return bigger_than
+        else:
+            def smaller_than(parcel1, parcel2):
+                """ Return True if desination's name of <parcel1> is bigger than
+               the desnination's of <parcel2>
+               @type parcel1: Parcel
+               @type parcel2: Parcel
+               @rtype: bool
+               """
+                return len(parcel1.get_destination()) > len(parcel2.get_destination())
+
+            return smaller_than
 
 
 if __name__ == '__main__':
