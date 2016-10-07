@@ -37,8 +37,18 @@ def reverse(stack):
     >>> stack.pop()
     2
     """
-    # TODO: implement this function.
-    pass
+
+    if stack.is_empty():
+        return None
+    else:
+        list = []
+        while not stack.is_empty():
+            list.append(stack.pop())
+
+        for item in list:
+            stack.push(item)
+
+
 
 
 def merge_alternating(stack1, stack2):
@@ -83,12 +93,22 @@ def merge_alternating(stack1, stack2):
     >>> merged.is_empty()
     True
     >>> s1.is_empty()
-    False
+    True
     >>> s2.is_empty()
-    False
+    True
     """
-    # TODO: implement this function.
-    pass
+    merged_stack = Stack()
+
+    reverse(stack1)
+    reverse(stack2)
+
+    while not stack1.is_empty() and not stack2.is_empty():
+
+        merged_stack.push(stack2.pop())
+        merged_stack.push(stack1.pop())
+
+
+    return merged_stack
 
 
 ##############################################################################
@@ -164,7 +184,7 @@ class PeopleChain:
         >>> chain.get_leader()
         'Iron Man'
         """
-        pass
+        return self.leader.name
 
     def get_second(self):
         """Return the name of the second person in the chain.
@@ -179,7 +199,7 @@ class PeopleChain:
         >>> chain.get_second()
         'Janna'
         """
-        pass
+        return self.leader.next.name
 
     def get_third(self):
         """Return the name of the third person in the chain.
@@ -193,7 +213,7 @@ class PeopleChain:
         >>> chain.get_third()
         'Kevan'
         """
-        pass
+        return self.leader.next.next.name
 
     def get_nth(self, n):
         """Return the name of the n-th person in the chain.
@@ -207,8 +227,8 @@ class PeopleChain:
         @rtype: str
 
         >>> chain = PeopleChain(['Iron Man', 'Janna', 'Kevan'])
-        >>> chain.get_nth(1)
-        'Iron Man'
+        >>> chain.get_nth(3)
+        'Kevan'
         """
         # Remember: you must use a for or while loop in this function body!
         # If you use a for loop but don't need to use the index, use an
@@ -216,7 +236,18 @@ class PeopleChain:
         #
         # for _ in range(10):
         #     <code that doesn't use the index>
-        pass
+        current_person = self.leader
+        for _ in range(n-1):
+            if current_person is None:
+                raise ShortChainError
+            current_person = current_person.next
+
+
+        if current_person is None:
+            raise ShortChainError
+        else:
+            return current_person.name
+
 
 
 if __name__ == '__main__':
