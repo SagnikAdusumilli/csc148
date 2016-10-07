@@ -55,13 +55,41 @@ class Scheduler:
         """
         raise NotImplementedError
 
+    def _get_eligibleTrucks(self, parcel, trucks):
+        """Retrun a list of trucks which can carry the parcel
+        @type self: Scheduler
+        @type parcel: Parcel
+        @type trucks: [Truck]
+        @rtype [Truck]
+        """
+        raise NotImplementedError
+
+
 class RandomScheduler(Scheduler):
+    def schedule(self, parcels, trucks, verbose=False):
+        # 1 shuffle the order of the parcels
+        # 2 get elgible trucks for that parcel
+        pass
+
+    def _get_eligibleTrucks(self, parcel, trucks):
+        list = []
+        for truck in trucks:
+            if truck.get_volume()<=parcel.get_volume() :
+                list.append(parcel)
+
+        return list
+
+class GreedyScheduler(Scheduler):
+
     def schedule(self, parcels, trucks, verbose=False):
         pass
 
-class GreedyScheduler(Scheduler):
-    def schedule(self, parcels, trucks, verbose=False):
+    def _get_eligibleTrucks(self, parcel, trucks):
         pass
+
+
+
+
 
 
 if __name__ == '__main__':

@@ -6,6 +6,7 @@ in the experiment, including at least a class Parcel and a class Truck.
 
 from distance_map import DistanceMap
 
+
 class Truck:
     """ Truck used in the experiments
 
@@ -80,8 +81,9 @@ class Truck:
         if parcel.get_destination() not in self._route:
             self._route.append(parcel.get_destination())
 
-    def deliver(self, map_):
-        """ deliver all the parcels to their destination and calucate the distance travelled
+    def deliver_optimized(self, map_):
+        """ deliver all the parcels to their destination in an optimzed manner
+        and calucate the distance travelled
         @type map_: DistanceMap
         @rtype: None
         """
@@ -93,9 +95,9 @@ class Truck:
             picked_city = ''
 
             for city in self.get_route():
-                dist = map_.get_distance(start_city,city)
+                dist = map_.get_distance(start_city, city)
 
-                if dist <min_dist or min_dist ==0:
+                if dist < min_dist or min_dist == 0:
                     min_dist = dist
                     picked_city = city
 
@@ -103,6 +105,20 @@ class Truck:
             start_city = picked_city
             self._distance_travelled += min_dist
 
+    def deliver(self, map_):
+        """deliver all the parcesl to thier locations and calulate the distance
+        travelled
+        @type map_: DistanceMap
+        @rtype: None
+        """
+
+        start_city = self.depot
+
+        while len(self._route) != 0:
+            destination = self._route.pop(0)
+            self._distance_travelled += map_.get_distance(start_city,
+                                                          destination)
+            start_city = destination
 
 
 class Parcel:
@@ -125,7 +141,7 @@ class Parcel:
     _volume >0
     """
 
-    def __init__(self, id_, source, destination,volume):
+    def __init__(self, id_, source, destination, volume):
         """
         @type id_: int
         @type source: str
@@ -138,17 +154,31 @@ class Parcel:
         self._volume = volume
 
     def get_volume(self):
+        """return the volume of the parcel
+        @type self: Parcel
+        @rtype int
+        """
         return self._volume
 
     def get_id(self):
+        """return the id of the parcel
+        @type self: Parcel
+        @rtype int
+        """
         return self._id
 
     def get_destination(self):
+        """ return the destination of the parcel
+        @type self: Parcel
+        @rtype str
+        """
         return self._destination
 
 
 if __name__ == '__main__':
     import python_ta
+
     python_ta.check_all(config='.pylintrc')
     import doctest
+
     doctest.testmod()
