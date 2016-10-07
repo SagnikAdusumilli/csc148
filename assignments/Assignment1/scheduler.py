@@ -66,10 +66,25 @@ class Scheduler:
 
 
 class RandomScheduler(Scheduler):
+
     def schedule(self, parcels, trucks, verbose=False):
-        # 1 shuffle the order of the parcels
-        # 2 get elgible trucks for that parcel
-        pass
+
+        shuffle(parcels)
+        not_used_parcels = []
+
+        for parcel in parcels:
+            eligible_trucks = self._get_eligibleTrucks(parcel, trucks)
+
+            if len(eligible_trucks) == 0:
+                not_used_parcels.append(parcel)
+            else:
+                chosen_index = choice(eligible_trucks)
+                eligible_trucks[chosen_index].load(parcel)
+
+        return not_used_parcels
+
+
+
 
     def _get_eligibleTrucks(self, parcel, trucks):
         list = []
