@@ -186,7 +186,7 @@ class Parcel:
         return self._destination
 
 
-def create_priority_parcle(compare_value, order):
+def create_priority_function(compare_value, order):
     """Return a method for _less_than method in PriorityQueue
     based on the given priorities (<cmpare_values>, order)
     @type compare_value: str
@@ -244,6 +244,10 @@ def create_priority_parcle(compare_value, order):
                 return len(parcel1.get_destination()) > len(parcel2.get_destination())
 
             return smaller_than
+
+def get_unusedTrucks(trucks):
+    pass
+
 
 
 if __name__ == '__main__':

@@ -44,8 +44,8 @@ def main():
     # Set constants controlling truck data
     num_ids_to_pick_from = 1000
     num_ids = 2
-    min_volume = 50
-    max_volume = 200
+    min_volume = 1
+    max_volume = 2
 
     # Generate some random trucks
     ids = list(range(num_ids_to_pick_from))

@@ -15,7 +15,7 @@ If you defined any domain classes other than Parcel and Truck, you may import
 them here.  You may not import external libraries.
 """
 from scheduler import RandomScheduler, GreedyScheduler
-from domain import Parcel, Truck
+from domain import Parcel, Truck, create_priority_function
 from distance_map import DistanceMap
 
 
@@ -45,6 +45,7 @@ class SchedulingExperiment:
         @type config: dict[str, str]
             The configuration for this experiment, including
             the data files and algorithm configuration to use.
+
         @rtype: None
         """
 
@@ -55,10 +56,11 @@ class SchedulingExperiment:
         self._trucks = read_trucks(config['truck_file'],
                                    config['depot_location'])
 
-        #initialize the priority queues according to the config file
-
         # initialize parcels
-        self._parcles = read_parcels(config['parcel_file'])
+        self._parcels = read_parcels(config['parcel_file'])
+
+        #initilize config dictionary
+        self._config = config
 
     def run(self, report=False):
         """Run the experiment and return statistics on the outcome.
@@ -76,8 +78,29 @@ class SchedulingExperiment:
             Statistics from this experiment. Keys and values are as specified
             in Step 6 of Assignment 1.
         """
-        # TODO: Implement this method!
-        pass
+        #TODO implement this method
+
+        """
+        fleet: the number of trucks in the fleet
+    unused_trucks: the number of unused trucks (trucks that have no parcels)
+    avg_distance: among the used trucks, the average distance they will have to travel to follow their scheduled route
+    avg_fullness: among the used trucks, their average fullness. The fullness of a truck is the percentage of its volume that is taken by parcels
+    unused_space: among the used trucks, their total unused space. The unused space of a truck is the amount (not percentage) of its volume         that is not taken by parcels
+    unscheduled: the number of unschedule parcels (parcels that did not fit onto any truck)
+        """
+        stats = {}
+
+        scheduler = None
+        if self._config['algorithm'] == 'greedy':
+            scheduler = GreedyScheduler(
+                create_priority_function('volume', self._config['truck_order']),
+                create_priority_function(self._config['parcel_priority'],
+                                         self._config['parcel_order']))
+
+        stats['unscheduled'] = len(scheduler.schedule(self._parcels, self._trucks))
+
+        print(stats)
+
 
     def _compute_stats(self):
         """Compute the statistics for this experiment.
@@ -89,8 +112,18 @@ class SchedulingExperiment:
             Statistics from this experiment. Keys and values are as specified
             in Step 6 of Assignment 1.
         """
-        # TODO: Implement this method!
-        pass
+
+        scheduler = None
+        parcels_not_used = []
+        if self._config['algorithm'] == 'greedy':
+            scheduler = GreedyScheduler(
+                create_priority_function('volume', self._config['truck_order']),
+                create_priority_function(self._config['parcel_priority'],
+                                         self._config['parcel_order']))
+
+        parcels_not_used = scheduler.schedule(self._parcels, self._trucks)
+
+
 
     def _print_report(self):
         """Report on the statistics for this experiment.
@@ -153,7 +186,7 @@ def read_distance_map(distance_map_file):
             c2 = tokens[1].strip()
             dist = int(tokens[2].strip())
             data[(c1, c2)] = dist
-    print(data)
+
     return data
 
 
@@ -211,4 +244,4 @@ if __name__ == '__main__':
     # experiment can run without errors. Feel free to uncomment it for testing
     # purposes, but you should remove it before submitting your final version.
     # ------------------------------------------------------------------------
-    # sanity_check('data/demo.json')
+    sanity_check('data/demo.json')

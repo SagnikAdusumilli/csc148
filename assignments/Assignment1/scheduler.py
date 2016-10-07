@@ -64,8 +64,8 @@ class Scheduler:
         """
         list = []
         for truck in trucks:
-            if truck.get_volume() <= parcel.get_volume():
-                list.append(parcel)
+            if truck.get_volume() >= parcel.get_volume():
+                list.append(truck)
 
         return list
 
@@ -105,14 +105,14 @@ class GreedyScheduler(Scheduler):
 
     # specify the types of priority qeue
     # for truck and parcel
-    def __init__(self, truck_queue, parcel_queue):
+    def __init__(self, func_truck, func_parcel):
         """
         @type self: GreedyScheduler
-        @type truck_queue: PriorityQueue
-        @type parcel_queue: PriorityQueue
+        @type func_truck: Callabe([Truck, Truck])
+        @type func_parcel: Callabe([Truck, Truck])
         """
-        self._t_queue = truck_queue
-        self._p_queue = parcel_queue
+        self._t_queue = PriorityQueue(func_truck)
+        self._p_queue = PriorityQueue(func_parcel)
 
     def schedule(self, parcels, trucks, verbose=False):
 
@@ -150,7 +150,6 @@ class GreedyScheduler(Scheduler):
 
         if city_eligible == []:
             return volume_eligible
-
 
 if __name__ == '__main__':
     import doctest
