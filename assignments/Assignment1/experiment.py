@@ -238,10 +238,3 @@ if __name__ == '__main__':
     import python_ta
 
     python_ta.check_all(config='.pylintrc')
-
-    # ------------------------------------------------------------------------
-    # The following code can be used as a quick and dirty check to see if your
-    # experiment can run without errors. Feel free to uncomment it for testing
-    # purposes, but you should remove it before submitting your final version.
-    # ------------------------------------------------------------------------
-    sanity_check('data/demo.json')
