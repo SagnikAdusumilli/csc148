@@ -12,7 +12,6 @@ LinkedList and _Node.
 All of the code from lecture is here, as well as some exercises to work on.
 """
 
-
 class _Node:
     """A node in a linked list.
 
@@ -145,7 +144,7 @@ class LinkedList:
         >>> str(lst)
         '[]'
         """
-        pass
+        self._first = None
 
     def append(self, item):
         """Append <item> to the end of this list.
@@ -161,7 +160,16 @@ class LinkedList:
         >>> str(lst)
         '[1 -> 2 -> 3 -> 4]'
         """
-        pass
+        if self._first is None:
+            self._first = _Node(item)
+
+        else:
+            curr = self._first
+
+            while curr.next is not None:
+                curr = curr.next
+
+            curr.next = _Node(item)
 
     def __setitem__(self, index, item):
         """Store item at position <index> in this list.
@@ -180,7 +188,22 @@ class LinkedList:
         >>> str(lst)
         '[100 -> 200 -> 300]'
         """
-        pass
+        if index == 0:
+            if self._first is None:
+                self._first = _Node(item)
+            else:
+                self._first.item = item
+
+        else:
+            curr = self._first
+
+            for i in range(index-1):
+                curr = curr.next
+
+            if curr.next is None:
+                curr.next = _Node(item)
+            else:
+                curr.next.item = item
 
     def extend(self, items):
         """Extend this list by appending elements from <items>.
@@ -196,7 +219,25 @@ class LinkedList:
         >>> str(lst)
         '[1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7]'
         """
-        pass
+        if self._first is None:
+            self._first = _Node(items[0])
+            curr = self._first
+            for item in items[1:]:
+                curr.next = _Node(item)
+                curr = curr.next
+
+        else:
+            curr = self._first
+
+            while curr.next is not None:
+                curr = curr.next
+
+            curr.next = _Node(items[0])
+
+            for item in items[1:]:
+                curr = curr.next
+                curr.next = _Node(item)
+
 
     # --- Additional Exercises ---
 
@@ -219,7 +260,15 @@ class LinkedList:
         >>> str(lst.map(len))
         '[5 -> 7]'
         """
-        pass
+        items = []
+        if self._first is not None:
+            curr = self._first
+
+            while curr is not None:
+                items.append(f(curr.item))
+                curr = curr.next
+
+            return LinkedList(items)
 
     def __iter__(self):
         """Return a linked list iterator.
@@ -235,7 +284,9 @@ class LinkedList:
         @type self: LinkedList
         @rtype: LinkedList
         """
-        pass
+        self._iter_node = self._first
+
+        return self
 
     def __next__(self):
         """Return the next item in the iteration.
@@ -259,11 +310,17 @@ class LinkedList:
         >>> lst.__next__()
         3
         """
-        pass
-
+        item = self._iter_node.item
+        self._iter_node = self._iter_node.next
+        return item
 if __name__ == '__main__':
 
+    linky = LinkedList([1, 2, 3, 4])
+
     print(linky)
+
+    import doctest
+    doctest.testmod()
 
     # import python_ta
     # python_ta.check_all()
