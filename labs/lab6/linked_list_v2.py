@@ -12,6 +12,7 @@ LinkedList and _Node.
 All of the code from lecture is here, as well as some exercises to work on.
 """
 
+
 class _Node:
     """A node in a linked list.
 
@@ -310,6 +311,9 @@ class LinkedList:
         >>> lst.__next__()
         3
         """
+        if self._iter_node is None:
+            raise StopIteration
+
         item = self._iter_node.item
         self._iter_node = self._iter_node.next
         return item
