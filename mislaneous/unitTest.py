@@ -1,7 +1,7 @@
 import unittest
 
-from Ramp_up.testme import is_even
-from Ramp_up.testme import findGreater
+from mislaneous.testme import is_even
+from mislaneous.testme import findGreater
 
 
 class TestDocTest(unittest.TestCase):
