@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="749951f0-cf83-490c-93ab-44f565cd01be" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labs/lab6/linked_list_v2.py" afterPath="$PROJECT_DIR$/labs/lab6/linked_list_v2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labs/lab7/flatten.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labs/lab7/nested.py" afterPath="$PROJECT_DIR$/labs/lab7/nested.py" />
     </list>
     <ignored path="csc148.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,11 +63,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="linked_list_v2.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="linked_list_v2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/labs/lab6/linked_list_v2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4015">
-              <caret line="330" column="0" selection-start-line="330" selection-start-column="0" selection-end-line="330" selection-end-column="0" />
+            <state relative-caret-position="272">
+              <caret line="329" column="27" selection-start-line="328" selection-start-column="2" selection-end-line="329" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pythagorian.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mislaneous/pythagorian.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="447">
+              <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rec_linked_list.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/labs/lab7/rec_linked_list.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3582">
+              <caret line="271" column="0" selection-start-line="271" selection-start-column="0" selection-end-line="271" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nested.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/labs/lab7/nested.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="106" column="32" selection-start-line="106" selection-start-column="32" selection-end-line="106" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flatten.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/labs/lab7/flatten.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -123,6 +165,9 @@
         <option value="$PROJECT_DIR$/assignments/Assignment1/data/demo.json" />
         <option value="$PROJECT_DIR$/assignments/Assignment1/experiment.py" />
         <option value="$PROJECT_DIR$/labs/lab6/linked_list_v2.py" />
+        <option value="$PROJECT_DIR$/mislaneous/pythagorian.py" />
+        <option value="$PROJECT_DIR$/labs/lab7/flatten.py" />
+        <option value="$PROJECT_DIR$/labs/lab7/nested.py" />
       </list>
     </option>
   </component>
@@ -185,6 +230,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches">
+        <subPane />
+      </pane>
       <pane id="Scope">
         <subPane subId="Problems" />
         <subPane subId="Project Files">
@@ -274,6 +322,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="mislaneous" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="csc148" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="csc148" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="labs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lab7" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="csc148" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="csc148" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="labs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -296,10 +376,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="csc148" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="csc148" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assignments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assignment1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
-      </pane>
-      <pane id="Scratches">
-        <subPane />
       </pane>
     </panes>
   </component>
@@ -334,84 +429,103 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.linked_list_v2">
-    <configuration default="false" name="Unittests in TestPeopleChain" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Doctest equal">
+    <configuration default="false" name="Doctest flatten" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exercises/ex3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/labs/lab7" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="csc148" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exercises/ex3/ex3_test.py" />
-      <option name="CLASS_NAME" value="TestPeopleChain" />
-      <option name="METHOD_NAME" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/labs/lab7/flatten.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="flatten" />
       <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_CLASS" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Doctest PriorityQueue.remove" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/assignments/Assignment1" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="csc148" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/assignments/Assignment1/container.py" />
-      <option name="CLASS_NAME" value="PriorityQueue" />
-      <option name="METHOD_NAME" value="remove" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="TEST_TYPE" value="TEST_FUNCTION" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="experiment" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="flatten" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/assignments/Assignment1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/labs/lab7" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="csc148" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/assignments/Assignment1/experiment.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/labs/lab7/flatten.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="generator" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="Doctest nested_max" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
+      <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/assignments/Assignment1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/labs/lab7" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="csc148" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/assignments/Assignment1/generator.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/labs/lab7/nested.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="nested_max" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_FUNCTION" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Doctest length" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/labs/lab7" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="csc148" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/labs/lab7/nested.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="length" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_FUNCTION" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Doctest equal" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/labs/lab7" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="csc148" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/labs/lab7/nested.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="equal" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_FUNCTION" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
@@ -576,19 +690,21 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <list size="5">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.linked_list_v2" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in TestPeopleChain" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Doctest PriorityQueue.remove" />
-      <item index="3" class="java.lang.String" itemvalue="Python.experiment" />
-      <item index="4" class="java.lang.String" itemvalue="Python.generator" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Doctest flatten" />
+      <item index="2" class="java.lang.String" itemvalue="Python.flatten" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Doctest nested_max" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Doctest length" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Doctest equal" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.experiment" />
-        <item index="1" class="java.lang.String" itemvalue="Python.generator" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Doctest PriorityQueue.remove" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in TestPeopleChain" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Doctest equal" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Doctest length" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Doctest nested_max" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Doctest flatten" />
+        <item index="4" class="java.lang.String" itemvalue="Python.flatten" />
       </list>
     </recent_temporary>
   </component>
@@ -609,35 +725,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Doctest_PriorityQueue_remove - 2016.10.07 at 16h 36m 54s.xml">
-      <configuration name="Doctest PriorityQueue.remove" configurationId="tests" />
+    <history-entry file="Doctest_equal - 2016.10.27 at 10h 10m 23s.xml">
+      <configuration name="Doctest equal" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctest_PriorityQueue_remove - 2016.10.07 at 18h 56m 50s.xml">
-      <configuration name="Doctest PriorityQueue.remove" configurationId="tests" />
+    <history-entry file="Doctest_equal - 2016.10.27 at 10h 13m 01s.xml">
+      <configuration name="Doctest equal" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctest_PriorityQueue_remove - 2016.10.07 at 18h 57m 08s.xml">
-      <configuration name="Doctest PriorityQueue.remove" configurationId="tests" />
+    <history-entry file="Doctest_equal - 2016.10.27 at 10h 13m 51s.xml">
+      <configuration name="Doctest equal" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctest_merge_alternating - 2016.10.07 at 15h 50m 21s.xml">
-      <configuration name="Doctest merge_alternating" configurationId="tests" />
+    <history-entry file="Doctest_equal - 2016.10.27 at 10h 14m 17s.xml">
+      <configuration name="Doctest equal" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctest_merge_alternating - 2016.10.07 at 15h 50m 56s.xml">
-      <configuration name="Doctest merge_alternating" configurationId="tests" />
+    <history-entry file="Doctest_equal - 2016.10.27 at 10h 41m 56s.xml">
+      <configuration name="Doctest equal" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctest_merge_alternating - 2016.10.07 at 15h 51m 20s.xml">
-      <configuration name="Doctest merge_alternating" configurationId="tests" />
+    <history-entry file="Doctest_equal - 2016.10.27 at 10h 43m 16s.xml">
+      <configuration name="Doctest equal" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_TestPeopleChain_test_get_nth_on_out_of_bounds_index - 2016.10.07 at 15h 54m 40s.xml">
-      <configuration name="Unittest TestPeopleChain.test_get_nth_on_out_of_bounds_index" configurationId="tests" />
+    <history-entry file="Doctest_length - 2016.10.27 at 10h 04m 18s.xml">
+      <configuration name="Doctest length" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_TestPeopleChain_test_get_nth_on_out_of_bounds_index - 2016.10.07 at 15h 54m 49s.xml">
-      <configuration name="Unittest TestPeopleChain.test_get_nth_on_out_of_bounds_index" configurationId="tests" />
+    <history-entry file="Doctest_length - 2016.10.27 at 10h 16m 32s.xml">
+      <configuration name="Doctest length" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_TestPeopleChain - 2016.10.07 at 15h 55m 31s.xml">
-      <configuration name="Unittests in TestPeopleChain" configurationId="tests" />
+    <history-entry file="Doctest_length - 2016.10.27 at 10h 17m 42s.xml">
+      <configuration name="Doctest length" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_TestStack - 2016.10.07 at 15h 55m 09s.xml">
-      <configuration name="Unittests in TestStack" configurationId="tests" />
+    <history-entry file="Doctest_length - 2016.10.27 at 10h 19m 05s.xml">
+      <configuration name="Doctest length" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -658,7 +774,7 @@
       <window_info id="Event Log" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.330053" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847533" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66704035" sideWeight="0.5014675" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5011211" sideWeight="0.4985325" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5011211" sideWeight="0.4985325" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32977304" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.3301105" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" x="-96" y="763" width="3100" height="478" />
@@ -712,54 +828,19 @@
           <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="32" />
+      <option name="time" value="34" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Ramp_up/test2.txt">
+    <entry file="file://$PROJECT_DIR$/mislaneous/function.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ramp_up/FileIO.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ramp_up/module.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ramp_up/unitTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ramp_up/historgram.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ramp_up/function.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ramp_up/testme.py">
+    <entry file="file://$PROJECT_DIR$/mislaneous/testme.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -784,14 +865,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/names.txt" />
-    <entry file="file://$PROJECT_DIR$/Ramp_up/test.txt">
+    <entry file="file://$PROJECT_DIR$/mislaneous/test.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ramp_up/test.py">
+    <entry file="file://$PROJECT_DIR$/mislaneous/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
@@ -900,13 +981,6 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.PyCharm2016.2/system/python_stubs/-18711307/builtins.py" />
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/docrunner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2363">
-          <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/exercises/ex3/ex3_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -939,7 +1013,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4482">
           <caret line="249" column="0" selection-start-line="249" selection-start-column="0" selection-end-line="249" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -947,7 +1020,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="827">
           <caret line="60" column="26" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -955,7 +1027,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="827">
           <caret line="124" column="30" selection-start-line="124" selection-start-column="30" selection-end-line="124" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -971,7 +1042,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -979,7 +1049,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -995,14 +1064,61 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mislaneous/pythagorian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/labs/lab6/linked_list_v2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4015">
-          <caret line="330" column="0" selection-start-line="330" selection-start-column="0" selection-end-line="330" selection-end-column="0" />
+        <state relative-caret-position="272">
+          <caret line="329" column="27" selection-start-line="328" selection-start-column="2" selection-end-line="329" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///local/packages/python-3.5.2/lib/python3.5/doctest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="923" column="0" selection-start-line="923" selection-start-column="0" selection-end-line="923" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/docrunner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labs/lab7/flatten.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labs/lab7/nested.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="106" column="32" selection-start-line="106" selection-start-column="32" selection-end-line="106" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labs/lab7/rec_linked_list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3582">
+          <caret line="271" column="0" selection-start-line="271" selection-start-column="0" selection-end-line="271" selection-end-column="0" />
           <folding />
         </state>
       </provider>

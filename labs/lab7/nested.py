@@ -24,8 +24,23 @@ def nested_max(obj):
     17
     >>> nested_max([1, 2, [1, 2, [3], 4, 5], 4])
     5
+    >>> nested_max([1, 2, 3, 4])
+    4
+
     """
-    pass
+    max_ =0
+    if isinstance(obj, int):
+        return obj
+
+    for item in obj:
+
+        local_max = nested_max(item)
+        max_ = max(local_max, max_)
+
+    return max_
+
+
+
 
 
 def length(obj):
@@ -41,12 +56,27 @@ def length(obj):
 
     >>> length(17)
     0
+    >>> length([1, 2])
+    2
     >>> length([1, 2, [1, 2], 4])
     4
+    >>> length([1, 2, [3], 4, 5])
+    5
     >>> length([1, 2, [1, 2, [3], 4, 5], 4])
     5
     """
-    pass
+    len_ = 0
+
+    if isinstance(obj, int):
+        return len_
+
+    len_ = len(obj)
+    for item in obj:
+
+        len_ = max(length(item), len_)
+
+    return len_
+
 
 
 def equal(obj1, obj2):
@@ -65,4 +95,27 @@ def equal(obj1, obj2):
     >>> equal([1, 2, [1, 2], 4], [4, 2, [2, 1], 3])
     False
     """
-    pass
+    if isinstance(obj1, int) and isinstance(obj2, int):
+        return obj1 == obj2
+
+    elif  isinstance(obj1, int) and not isinstance(obj2, int):
+        return False
+
+    elif not isinstance(obj1, int) and isinstance(obj2, int):
+        return False
+
+    elif len(obj1) != len(obj2):
+        return False
+
+    else:
+        for i in range(len(obj1)):
+
+            if not equal(obj1[i], obj2[i]):
+                return False
+
+        return True
+
+
+
+
+
