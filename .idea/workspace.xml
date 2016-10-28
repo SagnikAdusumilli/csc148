@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="749951f0-cf83-490c-93ab-44f565cd01be" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labs/lab7/flatten.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/csc148.iml" afterPath="$PROJECT_DIR$/.idea/csc148.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labs/lab7/nested.py" afterPath="$PROJECT_DIR$/labs/lab7/nested.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labs/lab7/rec_linked_list.py" afterPath="$PROJECT_DIR$/labs/lab7/rec_linked_list.py" />
     </list>
     <ignored path="csc148.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,9 +26,15 @@
     <SUITE FILE_PATH="coverage/csc148$Unittests_in_TestCar__1_.coverage" NAME="Unittests in TestCar (1) Coverage Results" MODIFIED="1474340058708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex1" />
     <SUITE FILE_PATH="coverage/csc148$generator.coverage" NAME="generator Coverage Results" MODIFIED="1475882477408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assignments/Assignment1" />
     <SUITE FILE_PATH="coverage/csc148$Doctests_in_DocTest.coverage" NAME="Doctests in testme Coverage Results" MODIFIED="1474163112784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ramp_up" />
+    <SUITE FILE_PATH="coverage/csc148$Doctest_LinkedListRec_insert.coverage" NAME="Doctest LinkedListRec.insert Coverage Results" MODIFIED="1477625256649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab7" />
+    <SUITE FILE_PATH="coverage/csc148$Doctest_LinkedListRec_pop_first__1_.coverage" NAME="Doctest LinkedListRec.pop_first (1) Coverage Results" MODIFIED="1477623381081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab7" />
     <SUITE FILE_PATH="coverage/csc148$Unittests_in_TestCarWithHypothesis.coverage" NAME="Unittests in TestCarWithHypothesis Coverage Results" MODIFIED="1474379122018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex1" />
     <SUITE FILE_PATH="coverage/csc148$Doctest_isEven__1_.coverage" NAME="Doctest isEven (1) Coverage Results" MODIFIED="1474135015144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ramp_up" />
+    <SUITE FILE_PATH="coverage/csc148$Doctest_LinkedListRec___setitem__.coverage" NAME="Doctest LinkedListRec.__setitem__ Coverage Results" MODIFIED="1477622495680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab7" />
+    <SUITE FILE_PATH="coverage/csc148$Doctest_LinkedListRec_pop_first.coverage" NAME="Doctest LinkedListRec.pop_first Coverage Results" MODIFIED="1477623925440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab7" />
+    <SUITE FILE_PATH="coverage/csc148$Doctest_LinkedListRec_map.coverage" NAME="Doctest LinkedListRec.map Coverage Results" MODIFIED="1477625965096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab7" />
     <SUITE FILE_PATH="coverage/csc148$Unittests_in_ex1_test.coverage" NAME="Unittests in ex1_test Coverage Results" MODIFIED="1474379113376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex1" />
+    <SUITE FILE_PATH="coverage/csc148$Doctest_LinkedListRec___getitem__.coverage" NAME="Doctest LinkedListRec.__getitem__ Coverage Results" MODIFIED="1477622337694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab7" />
     <SUITE FILE_PATH="coverage/csc148$Unittest_TestDocTest_test_findGreater__1_.coverage" NAME="Unittest TestDocTest.test_findGreater (1) Coverage Results" MODIFIED="1474137086217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ramp_up" />
     <SUITE FILE_PATH="coverage/csc148$Doctest_PriorityQueue_add.coverage" NAME="Doctest PriorityQueue.add Coverage Results" MODIFIED="1475860598113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assignments/Assignment1" />
     <SUITE FILE_PATH="coverage/csc148$welcome.coverage" NAME="welcome Coverage Results" MODIFIED="1473281591108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -35,15 +42,20 @@
     <SUITE FILE_PATH="coverage/csc148$Unittest_TestDocTest_test_isEven.coverage" NAME="Unittest TestDocTest.test_isEven Coverage Results" MODIFIED="1474135291078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ramp_up" />
     <SUITE FILE_PATH="coverage/csc148$Unittest_TestCarWithHypothesis_test_add_car_returns_none.coverage" NAME="Unittest TestCarWithHypothesis.test_add_car_returns_none Coverage Results" MODIFIED="1474379149891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex1" />
     <SUITE FILE_PATH="coverage/csc148$Doctest_isEven.coverage" NAME="Doctest isEven Coverage Results" MODIFIED="1474135985809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ramp_up" />
+    <SUITE FILE_PATH="coverage/csc148$Doctest_LinkedListRec_insert_first.coverage" NAME="Doctest LinkedListRec.insert_first Coverage Results" MODIFIED="1477624621610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab7" />
     <SUITE FILE_PATH="coverage/csc148$Unittests_in_unitTest.coverage" NAME="Unittests in unitTest Coverage Results" MODIFIED="1474137124962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ramp_up" />
     <SUITE FILE_PATH="coverage/csc148$Unittests_in_TestCar__3_.coverage" NAME="Unittests in TestCar (3) Coverage Results" MODIFIED="1474342252910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex1" />
+    <SUITE FILE_PATH="coverage/csc148$Doctest_LinkedListRec___len__.coverage" NAME="Doctest LinkedListRec.__len__ Coverage Results" MODIFIED="1477621689716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab7" />
     <SUITE FILE_PATH="coverage/csc148$Unittest_TestCar_test_move_simple.coverage" NAME="Unittest TestCar.test_move_simple Coverage Results" MODIFIED="1474341324869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex1" />
     <SUITE FILE_PATH="coverage/csc148$Unittests_in_TestPeopleChain.coverage" NAME="Unittests in TestPeopleChain Coverage Results" MODIFIED="1475870131068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex3" />
+    <SUITE FILE_PATH="coverage/csc148$Doctest_LinkedListRec_pop.coverage" NAME="Doctest LinkedListRec.pop Coverage Results" MODIFIED="1477624854858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab7" />
     <SUITE FILE_PATH="coverage/csc148$Unittest_TestPeopleChain_test_get_nth_on_out_of_bounds_index.coverage" NAME="Unittest TestPeopleChain.test_get_nth_on_out_of_bounds_index Coverage Results" MODIFIED="1475870088313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex3" />
     <SUITE FILE_PATH="coverage/csc148$Unittests_in_TestCar__2_.coverage" NAME="Unittests in TestCar (2) Coverage Results" MODIFIED="1474341534283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex1" />
+    <SUITE FILE_PATH="coverage/csc148$Doctest_LinkedListRec_count.coverage" NAME="Doctest LinkedListRec.count Coverage Results" MODIFIED="1477623061396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab7" />
     <SUITE FILE_PATH="coverage/csc148$Doctests_in_welcome.coverage" NAME="Doctests in welcome Coverage Results" MODIFIED="1474134964785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/csc148$Doctest_PriorityQueue_remove.coverage" NAME="Doctest PriorityQueue.remove Coverage Results" MODIFIED="1475881028064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assignments/Assignment1" />
     <SUITE FILE_PATH="coverage/csc148$Unittest_TestDocTest_test_isEven__1_.coverage" NAME="Unittest TestDocTest.test_isEven (1) Coverage Results" MODIFIED="1474137102141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ramp_up" />
+    <SUITE FILE_PATH="coverage/csc148$Doctest_LinkedListRec___contains__.coverage" NAME="Doctest LinkedListRec.__contains__ Coverage Results" MODIFIED="1477622638448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab7" />
     <SUITE FILE_PATH="coverage/csc148$FileIO.coverage" NAME="FileIO Coverage Results" MODIFIED="1474134680895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ramp_up" />
     <SUITE FILE_PATH="coverage/csc148$experiment.coverage" NAME="experiment Coverage Results" MODIFIED="1475882645134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assignments/Assignment1" />
     <SUITE FILE_PATH="coverage/csc148$Unittest_TestCar_test_dispatch.coverage" NAME="Unittest TestCar.test_dispatch Coverage Results" MODIFIED="1474379847448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex1" />
@@ -63,51 +75,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="linked_list_v2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/labs/lab6/linked_list_v2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="329" column="27" selection-start-line="328" selection-start-column="2" selection-end-line="329" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pythagorian.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mislaneous/pythagorian.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="rec_linked_list.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/labs/lab7/rec_linked_list.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3582">
-              <caret line="271" column="0" selection-start-line="271" selection-start-column="0" selection-end-line="271" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nested.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/labs/lab7/nested.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="106" column="32" selection-start-line="106" selection-start-column="32" selection-end-line="106" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="flatten.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/labs/lab7/flatten.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+            <state relative-caret-position="85">
+              <caret line="362" column="21" selection-start-line="362" selection-start-column="21" selection-end-line="362" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -168,6 +140,7 @@
         <option value="$PROJECT_DIR$/mislaneous/pythagorian.py" />
         <option value="$PROJECT_DIR$/labs/lab7/flatten.py" />
         <option value="$PROJECT_DIR$/labs/lab7/nested.py" />
+        <option value="$PROJECT_DIR$/labs/lab7/rec_linked_list.py" />
       </list>
     </option>
   </component>
@@ -178,10 +151,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-3" />
-    <option name="y" value="-3" />
-    <option name="width" value="1926" />
-    <option name="height" value="1039" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -232,67 +205,6 @@
     <panes>
       <pane id="Scratches">
         <subPane />
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Problems" />
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="csc148">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="csc148">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="exercises">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="csc148">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="assignments">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Assignment1">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="csc148">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT=".idea">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
       </pane>
       <pane id="ProjectPane">
         <subPane>
@@ -396,6 +308,67 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Problems" />
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="csc148">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="csc148">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="exercises">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="csc148">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="assignments">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Assignment1">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="csc148">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT=".idea">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -429,8 +402,8 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Doctest equal">
-    <configuration default="false" name="Doctest flatten" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Doctest LinkedListRec.map">
+    <configuration default="false" name="Doctest LinkedListRec.pop_first" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -441,94 +414,147 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="csc148" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/labs/lab7/flatten.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="flatten" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/labs/lab7/rec_linked_list.py" />
+      <option name="CLASS_NAME" value="LinkedListRec" />
+      <option name="METHOD_NAME" value="pop_first" />
       <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_FUNCTION" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="flatten" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="Doctest LinkedListRec.insert_first" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/labs/lab7" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="csc148" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/labs/lab7/rec_linked_list.py" />
+      <option name="CLASS_NAME" value="LinkedListRec" />
+      <option name="METHOD_NAME" value="insert_first" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Doctest LinkedListRec.pop" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/labs/lab7" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="csc148" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/labs/lab7/rec_linked_list.py" />
+      <option name="CLASS_NAME" value="LinkedListRec" />
+      <option name="METHOD_NAME" value="pop" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Doctest LinkedListRec.insert" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/labs/lab7" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="csc148" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/labs/lab7/rec_linked_list.py" />
+      <option name="CLASS_NAME" value="LinkedListRec" />
+      <option name="METHOD_NAME" value="insert" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Doctest LinkedListRec.map" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/labs/lab7" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="csc148" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/labs/lab7/rec_linked_list.py" />
+      <option name="CLASS_NAME" value="LinkedListRec" />
+      <option name="METHOD_NAME" value="map" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
+      <method />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/labs/lab7" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="csc148" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/labs/lab7/flatten.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
       <method />
     </configuration>
-    <configuration default="false" name="Doctest nested_max" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/labs/lab7" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="csc148" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/labs/lab7/nested.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="nested_max" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_FUNCTION" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
+      <option name="ADDITIONAL_ARGS" value="" />
       <method />
     </configuration>
-    <configuration default="false" name="Doctest length" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/labs/lab7" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="csc148" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/labs/lab7/nested.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="length" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_FUNCTION" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Doctest equal" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/labs/lab7" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="csc148" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/labs/lab7/nested.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="equal" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_FUNCTION" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
+      <option name="ADDITIONAL_ARGS" value="" />
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -560,6 +586,16 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <module name="csc148" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -692,19 +728,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.linked_list_v2" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Doctest flatten" />
-      <item index="2" class="java.lang.String" itemvalue="Python.flatten" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Doctest nested_max" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Doctest length" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Doctest equal" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Doctest LinkedListRec.pop_first" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Doctest LinkedListRec.insert_first" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Doctest LinkedListRec.pop" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Doctest LinkedListRec.insert" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Doctest LinkedListRec.map" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Doctest equal" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Doctest length" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Doctest nested_max" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Doctest flatten" />
-        <item index="4" class="java.lang.String" itemvalue="Python.flatten" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Doctest LinkedListRec.map" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Doctest LinkedListRec.insert" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Doctest LinkedListRec.pop" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Doctest LinkedListRec.insert_first" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Doctest LinkedListRec.pop_first" />
       </list>
     </recent_temporary>
   </component>
@@ -725,35 +761,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Doctest_equal - 2016.10.27 at 10h 10m 23s.xml">
-      <configuration name="Doctest equal" configurationId="tests" />
+    <history-entry file="Doctest_LinkedListRec_insert - 2016.10.27 at 23h 25m 20s.xml">
+      <configuration name="Doctest LinkedListRec.insert" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctest_equal - 2016.10.27 at 10h 13m 01s.xml">
-      <configuration name="Doctest equal" configurationId="tests" />
+    <history-entry file="Doctest_LinkedListRec_insert - 2016.10.27 at 23h 26m 16s.xml">
+      <configuration name="Doctest LinkedListRec.insert" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctest_equal - 2016.10.27 at 10h 13m 51s.xml">
-      <configuration name="Doctest equal" configurationId="tests" />
+    <history-entry file="Doctest_LinkedListRec_insert - 2016.10.27 at 23h 27m 37s.xml">
+      <configuration name="Doctest LinkedListRec.insert" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctest_equal - 2016.10.27 at 10h 14m 17s.xml">
-      <configuration name="Doctest equal" configurationId="tests" />
+    <history-entry file="Doctest_LinkedListRec_insert_first - 2016.10.27 at 23h 17m 02s.xml">
+      <configuration name="Doctest LinkedListRec.insert_first" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctest_equal - 2016.10.27 at 10h 41m 56s.xml">
-      <configuration name="Doctest equal" configurationId="tests" />
+    <history-entry file="Doctest_LinkedListRec_map - 2016.10.27 at 23h 38m 01s.xml">
+      <configuration name="Doctest LinkedListRec.map" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctest_equal - 2016.10.27 at 10h 43m 16s.xml">
-      <configuration name="Doctest equal" configurationId="tests" />
+    <history-entry file="Doctest_LinkedListRec_map - 2016.10.27 at 23h 38m 11s.xml">
+      <configuration name="Doctest LinkedListRec.map" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctest_length - 2016.10.27 at 10h 04m 18s.xml">
-      <configuration name="Doctest length" configurationId="tests" />
+    <history-entry file="Doctest_LinkedListRec_map - 2016.10.27 at 23h 39m 03s.xml">
+      <configuration name="Doctest LinkedListRec.map" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctest_length - 2016.10.27 at 10h 16m 32s.xml">
-      <configuration name="Doctest length" configurationId="tests" />
+    <history-entry file="Doctest_LinkedListRec_map - 2016.10.27 at 23h 39m 25s.xml">
+      <configuration name="Doctest LinkedListRec.map" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctest_length - 2016.10.27 at 10h 17m 42s.xml">
-      <configuration name="Doctest length" configurationId="tests" />
+    <history-entry file="Doctest_LinkedListRec_pop - 2016.10.27 at 23h 19m 37s.xml">
+      <configuration name="Doctest LinkedListRec.pop" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctest_length - 2016.10.27 at 10h 19m 05s.xml">
-      <configuration name="Doctest length" configurationId="tests" />
+    <history-entry file="Doctest_LinkedListRec_pop - 2016.10.27 at 23h 20m 55s.xml">
+      <configuration name="Doctest LinkedListRec.pop" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -766,19 +802,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="-3" width="1926" height="1039" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16257995" sideWeight="0.49760765" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16199848" sideWeight="0.49760765" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930514" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.330053" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847533" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66704035" sideWeight="0.5014675" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5011211" sideWeight="0.4985325" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5" sideWeight="0.4985325" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32977304" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.3301105" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" x="-96" y="763" width="3100" height="478" />
-      <window_info id="Debug" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39925373" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3989402" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977304" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -789,7 +826,6 @@
       <window_info id="Course Description" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24919094" sideWeight="0.50079745" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329296" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -828,7 +864,7 @@
           <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="34" />
+      <option name="time" value="35" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1069,7 +1105,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mislaneous/pythagorian.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
+        <state relative-caret-position="510">
           <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
           <folding />
         </state>
@@ -1077,31 +1113,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/labs/lab6/linked_list_v2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="5593">
           <caret line="329" column="27" selection-start-line="328" selection-start-column="2" selection-end-line="329" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///local/packages/python-3.5.2/lib/python3.5/doctest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="923" column="0" selection-start-line="923" selection-start-column="0" selection-end-line="923" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/docrunner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///local/packages/python-3.5.2/lib/python3.5/doctest.py" />
     <entry file="file://$PROJECT_DIR$/labs/lab7/flatten.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
+        <state relative-caret-position="34">
           <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
           <folding />
         </state>
@@ -1109,16 +1130,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/labs/lab7/nested.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
+        <state relative-caret-position="1802">
           <caret line="106" column="32" selection-start-line="106" selection-start-column="32" selection-end-line="106" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/docrunner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/labs/lab7/rec_linked_list.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3582">
-          <caret line="271" column="0" selection-start-line="271" selection-start-column="0" selection-end-line="271" selection-end-column="0" />
+        <state relative-caret-position="85">
+          <caret line="362" column="21" selection-start-line="362" selection-start-column="21" selection-end-line="362" selection-end-column="21" />
           <folding />
         </state>
       </provider>

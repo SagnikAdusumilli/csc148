@@ -87,7 +87,18 @@ class LinkedListRec:
         >>> len(lst)
         3
         """
-        pass
+        if self._first is None:
+            return 0
+        else:
+            count = 1
+
+            if self._rest is not None:
+                count += len(self._rest)
+
+            return count
+
+
+
 
     def __getitem__(self, index):
         """Return the item at position <index> in this list.
@@ -110,7 +121,12 @@ class LinkedListRec:
         ...
         IndexError
         """
-        pass
+        if index >= len(self):
+            raise IndexError
+        elif index == 0:
+            return self._first
+        else:
+            return self._rest.__getitem__(index-1)
 
     def __setitem__(self, index, item):
         """Store item at position <index> in this list.
@@ -133,7 +149,14 @@ class LinkedListRec:
         >>> str(lst)
         '100 -> 200 -> 300'
         """
-        pass
+
+        if index >= len(self):
+            raise IndexError
+        elif index == 0:
+            self._first = item
+        else:
+            self._rest.__setitem__(index-1,item)
+
 
     def __contains__(self, item):
         """Return whether <item> is in this list.
@@ -150,7 +173,14 @@ class LinkedListRec:
         >>> 4 in lst
         False
         """
-        pass
+        if self._first is None:
+            return False
+        elif self._first == item:
+            return True
+        elif self._rest is None:
+            return False
+        else:
+            return self._rest.__contains__(item)
 
     def count(self, item):
         """Return the number of times <item> occurs in this list.
@@ -169,7 +199,17 @@ class LinkedListRec:
         >>> lst.count(3)
         1
         """
-        pass
+        count = 0
+        if self._first is None:
+            return count
+        elif self._first == item:
+            count += 1
+
+        if self._rest is not None:
+            count += self._rest.count(item)
+
+
+        return count
 
     # ------------------------------------------------------------------------
     # Mutating methods: these methods modify the structure of the list
@@ -193,7 +233,16 @@ class LinkedListRec:
         >>> str(lst)
         ''
         """
-        pass
+        if self._first is None:
+            raise IndexError
+
+        if self._rest._first is None:
+            self._first = None
+            return None
+
+        else:
+            self._first = self._rest._first
+            self._rest.pop_first()
 
     def insert_first(self, item):
         """Insert item at the front of the list.
@@ -214,7 +263,17 @@ class LinkedListRec:
         >>> str(lst)
         '1 -> 2 -> 3'
         """
-        pass
+        if self._first is None:
+            self._first = item
+            self._rest = LinkedListRec([])
+
+        else:
+            temp = self._first
+            self._first = item
+            if self._rest is None:
+                self._rest = LinkedListRec([])
+            self._rest.insert_first(temp)
+
 
     def pop(self, index):
         """Remove node at position <index>.
@@ -240,7 +299,13 @@ class LinkedListRec:
         ...
         IndexError
         """
-        pass
+        if self._first is None:
+            raise IndexError
+        elif index == 0:
+            self.pop_first()
+
+        if self._rest._first is not None:
+            self._rest.pop(index-1)
 
     def insert(self, index, item):
         """Insert item in to the list at position <index>.
@@ -268,7 +333,14 @@ class LinkedListRec:
         ...
         IndexError
         """
-        pass
+        if index > len(self):
+            raise IndexError
+        else:
+            if index == 0:
+                self.insert_first(item)
+
+            else:
+                self._rest.insert(index-1, item)
 
     # --- Additional Exercises ---
     def map(self, f):
@@ -284,10 +356,22 @@ class LinkedListRec:
         >>> func = str.upper
         >>> func('hi')
         'HI'
-        >>> lst = LinkedListRec(['Hello', 'Goodbye'])
+        >>> lst = LinkedListRec(['Hello', 'Goodbye','sagnik is awesome'])
         >>> str(lst.map(func))
-        'HELLO -> GOODBYE'
+        'HELLO -> GOODBYE -> SAGNIK IS AWESOME'
         >>> str(lst.map(len))
-        '5 -> 7'
+        '5 -> 7 -> 17'
         """
-        pass
+        lst = LinkedListRec([])
+
+        if self._first is not None:
+            lst.insert_first(f(self._first))
+
+        if self._rest is not None:
+            lst_2 = self._rest.map(f)
+
+            for i in range(len(lst_2)):
+                lst.insert(i+1, lst_2.__getitem__(i))
+
+        return lst
+
