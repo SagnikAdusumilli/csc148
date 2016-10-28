@@ -26,8 +26,8 @@ class DistanceMap:
         @type self: DistanceMap
         @type data: {(str,str),int}
         @rtype: None
-        >>> map = DistanceMap({('a', 'b'): 2})
-        >>> map._map
+        >>> m = DistanceMap({('a', 'b'): 2})
+        >>> m._map
         {('a', 'b'): 2}
         """
         self._map = data

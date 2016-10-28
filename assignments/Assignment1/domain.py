@@ -7,6 +7,10 @@ in the experiment, including at least a class Parcel and a class Truck.
 from distance_map import DistanceMap
 
 
+class PathNotFoundError(Exception):
+    """Exception Raised when the distance between 2 cities is unknown"""
+
+
 class Truck:
     """ Truck used in the experiments
 
@@ -108,6 +112,9 @@ class Truck:
             for city in self.get_route():
                 dist = map_.get_distance(start_city, city)
 
+                if dist is None:
+                    raise PathNotFoundError
+
                 if dist < min_dist or min_dist == 0:
                     min_dist = dist
                     picked_city = city
@@ -126,9 +133,14 @@ class Truck:
         start_city = self.depot
 
         while len(self._route) != 0:
+
             destination = self._route.pop(0)
-            self._distance_travelled += map_.get_distance(start_city,
-                                                          destination)
+            dist = map_.get_distance(start_city, destination)
+
+            if dist is None:
+                raise PathNotFoundError
+
+            self._distance_travelled += dist
             start_city = destination
 
 
@@ -230,7 +242,8 @@ def create_priority_function(compare_value, order):
                 @type parcel2: Parcel
                 @rtype: bool
                 """
-                return len(parcel1.get_destination()) > len(parcel2.get_destination())
+                return len(parcel1.get_destination()) > len(
+                    parcel2.get_destination())
 
             return bigger_than
         else:
@@ -241,13 +254,75 @@ def create_priority_function(compare_value, order):
                @type parcel2: Parcel
                @rtype: bool
                """
-                return len(parcel1.get_destination()) > len(parcel2.get_destination())
+                return len(parcel1.get_destination()) > len(
+                    parcel2.get_destination())
 
             return smaller_than
 
-def get_unusedTrucks(trucks):
-    pass
 
+def get_unused_trucks(trucks):
+    """Return the list of trucks that were not used
+    @type trucks: [Truck]
+    @rtype: [Truck]
+    """
+    unused_trucks = []
+
+    for truck in trucks:
+        if truck.get_volume() == truck.get_initial_volume():
+            unused_trucks.append(truck)
+
+    return unused_trucks
+
+
+def get_unused_space(trucks):
+    """Return the total unused space
+    @type trucks: [Truck]
+    @rtype: int
+    """
+
+    space = 0
+    for truck in trucks:
+        space += truck.get_volume()
+
+    return space
+
+
+def get_average_fullness(trucks):
+    """Return the average of the percentage of
+    volume taken up the parcels on each
+    truck round to 1 decimal place
+    @type trucks: [Truck]
+    @rtype: float
+    """
+    sum_ = 0.0
+
+    if len(trucks)==0:
+        return sum_
+
+    for truck in trucks:
+        volume_taken = (truck.get_initial_volume()
+                        - truck.get_volume()) / truck.get_initial_volume()
+
+        sum_ += volume_taken * 100
+
+    return round(sum_ / len(trucks), 1)
+
+
+def get_average_distance(trucks):
+    """Return the average distance
+    covered by the truck rounded to 1 decimal place
+    @type trucks: [Truck]
+    @rtype: float
+    """
+    sum_ = 0.0
+
+    if len(trucks)==0:
+        return sum_
+
+    for truck in trucks:
+        sum_ += truck.get_distance_travelled()
+
+    return round(sum_/len(trucks))
 
 
 if __name__ == '__main__':

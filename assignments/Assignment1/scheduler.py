@@ -85,8 +85,8 @@ class RandomScheduler(Scheduler):
             if len(eligible_trucks) == 0:
                 not_used_parcels.append(parcel)
             else:
-                chosen_index = choice(eligible_trucks)
-                eligible_trucks[chosen_index].load(parcel)
+                chosen_truck = choice(eligible_trucks)
+                chosen_truck.load(parcel)
 
         return not_used_parcels
 
@@ -129,7 +129,6 @@ class GreedyScheduler(Scheduler):
             if eligible_trucks == []:
                 not_used_parcels.append(parcel)
             else:
-                # sort trucks according to priority
                 for truck in eligible_trucks:
                     self._t_queue.add(truck)
 
@@ -146,10 +145,12 @@ class GreedyScheduler(Scheduler):
         city_eligible = []
         for truck in volume_eligible:
             if parcel.get_destination() in truck.get_route():
-                city_eligible.append(parcel)
+                city_eligible.append(truck)
 
         if city_eligible == []:
             return volume_eligible
+        else:
+            return city_eligible
 
 if __name__ == '__main__':
     import doctest

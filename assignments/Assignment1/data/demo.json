@@ -4,6 +4,6 @@
   "map_file": "data/map-data-2.txt",
   "algorithm": "greedy",
   "parcel_priority": "volume",
-  "parcel_order": "non-decreasing",
+  "parcel_order": "decreasing",
   "truck_order": "non-decreasing",
   "verbose": "false"}
