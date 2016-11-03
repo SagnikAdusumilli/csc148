@@ -32,6 +32,7 @@ class Tree:
       This setting of attributes represents an empty Tree.
     - self._subtrees does not contain any empty Trees.
     """
+
     def __init__(self, root, subtrees):
         """Initialize a new Tree with the given root value and subtrees.
 
@@ -102,8 +103,17 @@ class Tree:
         >>> 4 in t
         False
         """
-        # TODO: implement this method
-        pass
+        if self.is_empty():
+            return False
+        elif self._root == item:
+            return True
+        else:
+            for sub_tree in self._subtrees:
+
+                if sub_tree.__contains__(item):
+                    return True
+
+            return False
 
     def leaves(self):
         """Return a list of all of the leaf items in the tree.
@@ -122,8 +132,15 @@ class Tree:
         >>> t.leaves()
         [4, 5, 6, 7]
         """
-        # TODO: implement this method
-        pass
+        if self.is_empty():
+            return []
+        elif self._subtrees == []:
+            return [self._root]
+        else:
+            lst = []
+            for sub_tree in self._subtrees:
+                lst.extend(sub_tree.leaves())
+            return lst
 
     def branching_factor(self):
         """Return the average branching factor of this tree.
@@ -147,9 +164,12 @@ class Tree:
         >>> t.branching_factor()
         3.0
         """
-        # TODO: implement this method
-        # Note: you'll want to first implement _branching_factor_helper here.
-        pass
+        data = self._branching_factor_helper()
+
+        if data == (0, 0):
+            return 0.0
+        else:
+            return data[1]/data[0]
 
     def _branching_factor_helper(self):
         """Return a tuple (x,y) where:
@@ -159,9 +179,27 @@ class Tree:
 
         @type self: Tree
         @rtype: (int, int)
+
+        >>> Tree(None, [])._branching_factor_helper()
+        (0, 0)
+        >>> t = Tree(1, [Tree(2, []), Tree(5, [])])
+        >>> t._branching_factor_helper()
+        (1, 2)
+
         """
-        # TODO: implement this method
-        pass
+        if self.is_empty() or self._subtrees == []:
+            return tuple([0, 0])
+        else:
+            count_non_leaves = 1
+            branching_factor = len(self._subtrees)
+
+            for sub_tree in self._subtrees:
+                result = sub_tree._branching_factor_helper()
+
+                count_non_leaves += result[0]
+                branching_factor += result[1]
+
+            return tuple([count_non_leaves, branching_factor])
 
     def insert(self, item):
         """Insert <item> into this tree using the following algorithm.
@@ -197,8 +235,20 @@ class Tree:
         # >>> random.randint(1, 3)
         # 2  # Randomly returns 1, 2, or 3
 
-        # TODO: implement this method
-        pass
+        if self.is_empty():
+            self._root = item
+
+        elif self._subtrees == []:
+            self._subtrees.append(Tree(item, []))
+
+        else:
+            choice = random.randint(1, 3)
+
+            if choice == 3:
+                self._subtrees.append(Tree(item, []))
+            else:
+                chosen_index = random.randint(0,  len(self._subtrees)-1)
+                self._subtrees[chosen_index].insert(item)
 
     def _insert_child(self, item, parent):
         """Insert <item> into this tree as a child of <parent>.
@@ -217,4 +267,5 @@ class Tree:
 
 if __name__ == '__main__':
     import doctest
+
     doctest.testmod()
