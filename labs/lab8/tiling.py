@@ -47,9 +47,9 @@ def draw_grid(n):
             pygame.draw.rect(screen, WHITE, rect, 1)
 
     # Uncomment the following part after you've implemented tile_with_dominoes
-    # tiling = tile_with_dominoes(n)
-    # for domino in tiling:
-    #     domino.draw(screen)
+    tiling = tile_with_dominoes(n)
+    for domino in tiling:
+        domino.draw(screen)
 
     # Display the screen to the user.
     pygame.display.flip()
@@ -146,10 +146,10 @@ def tile_with_dominoes(n):
         # TODO (1)
         # Compute four different tilings of a 2^(n-1) by 2^(n-1) grid,
         # for the four different quadrants.
-        upper_left_tiling = []
-        upper_right_tiling = []
-        lower_left_tiling = []
-        lower_right_tiling = []
+        upper_left_tiling = [0, 0]
+        upper_right_tiling = [2**(n-1), 0]
+        lower_left_tiling = [0, 2**(n-2)]
+        lower_right_tiling = [2**(n-1), 2**(n-2)]
 
         # TODO (2)
         # Each tiling will have square coordinates between 0 and 2^(n-1),
@@ -170,10 +170,9 @@ def _tile_2_by_2():
 
     @rtype: list[Domino]
     """
-    # Remember that the positions here do *not* depend on SQUARE_SIZE.
-    pass
+    return [Domino((0, 0), (0, 1)), Domino((1, 0), (1, 1))]
 
 
 if __name__ == '__main__':
-    draw_grid(5)
+    draw_grid(1)
     input('Press Enter to exit\n')

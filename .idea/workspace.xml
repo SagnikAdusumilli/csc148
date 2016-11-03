@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="749951f0-cf83-490c-93ab-44f565cd01be" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labs/lab8/tree.py" afterPath="$PROJECT_DIR$/labs/lab8/tree.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labs/lab8/tiling.py" afterPath="$PROJECT_DIR$/labs/lab8/tiling.py" />
     </list>
     <ignored path="csc148.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,8 +75,8 @@
       <file leaf-file-name="tree.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/labs/lab8/tree.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" column="53" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+            <state relative-caret-position="-1188">
+              <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
               <folding>
                 <marker date="1478181643000" expanded="true" signature="4469:4560" ph="..." />
                 <marker date="1478181643000" expanded="true" signature="6699:6790" ph="..." />
@@ -89,18 +88,8 @@
       <file leaf-file-name="tiling.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/labs/lab8/tiling.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="docrunner.py" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/docrunner.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+            <state relative-caret-position="882">
+              <caret line="178" column="0" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -164,6 +153,7 @@
         <option value="$PROJECT_DIR$/labs/lab7/rec_linked_list.py" />
         <option value="$PROJECT_DIR$/exercises/ex4/ex4.py" />
         <option value="$PROJECT_DIR$/labs/lab8/tree.py" />
+        <option value="$PROJECT_DIR$/labs/lab8/tiling.py" />
       </list>
     </option>
   </component>
@@ -407,7 +397,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Doctests in Tree">
+  <component name="RunManager" selected="Python.tiling">
     <configuration default="false" name="Doctest Tree._branching_factor_helper" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -442,26 +432,6 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/labs/lab8/tree.py" />
       <option name="CLASS_NAME" value="Tree" />
       <option name="METHOD_NAME" value="branching_factor" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Doctest Tree._branching_factor_helper (1)" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/labs/lab8" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="csc148" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/labs/lab8/tree.py" />
-      <option name="CLASS_NAME" value="Tree" />
-      <option name="METHOD_NAME" value="_branching_factor_helper" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_METHOD" />
       <option name="PATTERN" value="" />
@@ -506,6 +476,24 @@
       <option name="TEST_TYPE" value="TEST_CLASS" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="tiling" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/labs/lab8" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="csc148" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/labs/lab8/tiling.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
@@ -674,17 +662,17 @@
       <item index="0" class="java.lang.String" itemvalue="Python.linked_list_v2" />
       <item index="1" class="java.lang.String" itemvalue="Python tests.Doctest Tree._branching_factor_helper" />
       <item index="2" class="java.lang.String" itemvalue="Python tests.Doctest Tree.branching_factor" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Doctest Tree._branching_factor_helper (1)" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Doctest Tree.insert" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Doctests in Tree" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Doctest Tree.insert" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Doctests in Tree" />
+      <item index="5" class="java.lang.String" itemvalue="Python.tiling" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Doctests in Tree" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Doctest Tree.insert" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Doctest Tree.branching_factor" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Doctest Tree._branching_factor_helper" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Doctest Tree._branching_factor_helper (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Python.tiling" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Doctests in Tree" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Doctest Tree.insert" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Doctest Tree.branching_factor" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Doctest Tree._branching_factor_helper" />
       </list>
     </recent_temporary>
   </component>
@@ -754,7 +742,7 @@
       <window_info id="Event Log" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.330053" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847533" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66704035" sideWeight="0.5014675" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5" sideWeight="0.4985325" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5" sideWeight="0.4985325" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32977304" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.3301105" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" x="-96" y="763" width="3100" height="478" />
@@ -1087,8 +1075,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/labs/lab8/tree.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="53" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+        <state relative-caret-position="-1188">
+          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
           <folding>
             <marker date="1478181643000" expanded="true" signature="4469:4560" ph="..." />
             <marker date="1478181643000" expanded="true" signature="6699:6790" ph="..." />
@@ -1098,8 +1086,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/labs/lab8/tiling.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="882">
+          <caret line="178" column="0" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
           <folding />
         </state>
       </provider>
