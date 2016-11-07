@@ -35,6 +35,7 @@ class Tree:
       This setting of attributes represents an empty Tree.
     - self._subtrees does not contain any empty Trees.
     """
+
     def __init__(self, root, subtrees):
         """Initialize a new Tree with the given root
         value and subtrees.
@@ -58,9 +59,9 @@ class Tree:
         return self._root is None
 
 ##############################################################################
-# Task 1: Another tree method
-##############################################################################
-    # TODO: Implement this method!
+    # Task 1: Another tree method
+###############################################################################
+
     def __eq__(self, other):
         """Return whether <self> and <other> are equal.
 
@@ -80,17 +81,17 @@ class Tree:
         if not self.is_empty() and other.is_empty():
             return False
         if self.is_empty() and other.is_empty():
-            return False
+            return True
         if self._subtrees == [] and other._subtrees != []:
             return False
         if self._subtrees != [] and other._subtrees == []:
             return False
         if self._root == other._root:
             return True
+##############################################################################
+            # Task 2: Trees and nested lists
+##############################################################################
 
-##############################################################################
-# Task 2: Trees and nested lists
-##############################################################################
     def to_nested_list(self):
         """Return the nested list representation of this tree.
 
@@ -108,7 +109,6 @@ class Tree:
             return lst
 
 
-# TODO: Implement this function!
 def to_tree(obj):
     """Return the Tree which <obj> represents.
 
@@ -150,6 +150,7 @@ class BinaryTree:
     _root, _left, _right are either ALL None, or none of them are None.
       If they are all None, this represents an empty BinaryTree.
     """
+
     def __init__(self, root, left, right):
         """Initialise a new binary tree with the given values.
 
@@ -194,36 +195,57 @@ class BinaryTree:
         """
         if self.is_empty():
             return []
-        
+
         else:
             lst = [self._root]
 
-            lst.extend(self._left)
-            lst.extend(self._right)
+            if self._left is not None:
+                lst.extend(self._left.preorder())
+
+            if self._right is not None:
+                lst.extend(self._right.preorder())
 
         return lst
 
-    # TODO: Implement this method!
     def inorder(self):
         """Return a list of this tree's items using an *inorder* traversal.
 
         @type self: BinaryTree
         @rtype: list
         """
-        pass
+        if self.is_empty():
+            return []
 
-    # TODO: Implement this method!
+        lst = []
+        if self._left is not None:
+            lst.extend(self._left.inorder())
+            lst.append(self._root)
+
+        if self._right is not None:
+            lst.extend(self._right.inorder())
+
+        return lst
+
     def postorder(self):
         """Return a list of this tree's items using a *postorder* traversal.
 
         @type self: BinaryTree
         @rtype: list
         """
-        pass
+        if self.is_empty():
+            return []
+
+        lst = []
+        if self._left is not None:
+            lst.extend(self._left.postorder())
+
+        if self._right is not None:
+            lst.extend(self._right.postorder())
+
+        lst.append(self._root)
+        return lst
 
 
 if __name__ == '__main__':
     import python_ta
-    t = Tree(1, [Tree(2, [Tree(4, []), Tree(5, [])]), Tree(3, [])])
-    print(t.to_nested_list())
     python_ta.check_all(config='pylintrc.txt')
