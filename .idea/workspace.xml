@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="749951f0-cf83-490c-93ab-44f565cd01be" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/csc148.iml" afterPath="$PROJECT_DIR$/.idea/csc148.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/exercises/ex5/.hypothesis/examples/8bdf0a94e495ee78/83d444257e96c0f9" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/exercises/ex5/.hypothesis/examples/8bdf0a94e495ee78/bee1393a9d719111" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exercises/ex5/ex5.py" afterPath="$PROJECT_DIR$/exercises/ex5/ex5.py" />
     </list>
     <ignored path="csc148.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,52 +22,57 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/csc148$Doctest_histogram.coverage" NAME="Doctest histogram Coverage Results" MODIFIED="1474339598703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ramp_up" />
-    <SUITE FILE_PATH="coverage/csc148$Unittests_in_ex1_test2.coverage" NAME="Unittests in ex1_test2 Coverage Results" MODIFIED="1474342597364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex1" />
+    <SUITE FILE_PATH="coverage/csc148$Unittest_TestTraversals_test_root_position.coverage" NAME="Unittest TestTraversals.test_root_position Coverage Results" MODIFIED="1478749770259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex5" />
     <SUITE FILE_PATH="coverage/csc148$Unittests_in_TestCar__1_.coverage" NAME="Unittests in TestCar (1) Coverage Results" MODIFIED="1474340058708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex1" />
     <SUITE FILE_PATH="coverage/csc148$generator.coverage" NAME="generator Coverage Results" MODIFIED="1475882477408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assignments/Assignment1" />
-    <SUITE FILE_PATH="coverage/csc148$Doctests_in_DocTest.coverage" NAME="Doctests in testme Coverage Results" MODIFIED="1474163112784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ramp_up" />
     <SUITE FILE_PATH="coverage/csc148$Doctest_LinkedListRec_insert.coverage" NAME="Doctest LinkedListRec.insert Coverage Results" MODIFIED="1477625256649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab7" />
-    <SUITE FILE_PATH="coverage/csc148$Doctest_LinkedListRec_pop_first__1_.coverage" NAME="Doctest LinkedListRec.pop_first (1) Coverage Results" MODIFIED="1477623381081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab7" />
     <SUITE FILE_PATH="coverage/csc148$Unittests_in_TestCarWithHypothesis.coverage" NAME="Unittests in TestCarWithHypothesis Coverage Results" MODIFIED="1474379122018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex1" />
     <SUITE FILE_PATH="coverage/csc148$Doctest_isEven__1_.coverage" NAME="Doctest isEven (1) Coverage Results" MODIFIED="1474135015144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ramp_up" />
     <SUITE FILE_PATH="coverage/csc148$Doctest_LinkedListRec___setitem__.coverage" NAME="Doctest LinkedListRec.__setitem__ Coverage Results" MODIFIED="1477622495680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab7" />
-    <SUITE FILE_PATH="coverage/csc148$Doctest_LinkedListRec_pop_first.coverage" NAME="Doctest LinkedListRec.pop_first Coverage Results" MODIFIED="1477623925440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab7" />
-    <SUITE FILE_PATH="coverage/csc148$Doctest_LinkedListRec_map.coverage" NAME="Doctest LinkedListRec.map Coverage Results" MODIFIED="1477625965096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab7" />
-    <SUITE FILE_PATH="coverage/csc148$Unittests_in_ex1_test.coverage" NAME="Unittests in ex1_test Coverage Results" MODIFIED="1474379113376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex1" />
-    <SUITE FILE_PATH="coverage/csc148$Doctest_LinkedListRec___getitem__.coverage" NAME="Doctest LinkedListRec.__getitem__ Coverage Results" MODIFIED="1477622337694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab7" />
     <SUITE FILE_PATH="coverage/csc148$Unittest_TestDocTest_test_findGreater__1_.coverage" NAME="Unittest TestDocTest.test_findGreater (1) Coverage Results" MODIFIED="1474137086217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ramp_up" />
     <SUITE FILE_PATH="coverage/csc148$Doctest_PriorityQueue_add.coverage" NAME="Doctest PriorityQueue.add Coverage Results" MODIFIED="1475860598113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assignments/Assignment1" />
-    <SUITE FILE_PATH="coverage/csc148$welcome.coverage" NAME="welcome Coverage Results" MODIFIED="1473281591108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/csc148$Unittests_in_TestCar.coverage" NAME="Unittests in TestCar Coverage Results" MODIFIED="1474380224519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex1" />
     <SUITE FILE_PATH="coverage/csc148$Unittest_TestDocTest_test_isEven.coverage" NAME="Unittest TestDocTest.test_isEven Coverage Results" MODIFIED="1474135291078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ramp_up" />
     <SUITE FILE_PATH="coverage/csc148$Unittest_TestCarWithHypothesis_test_add_car_returns_none.coverage" NAME="Unittest TestCarWithHypothesis.test_add_car_returns_none Coverage Results" MODIFIED="1474379149891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex1" />
-    <SUITE FILE_PATH="coverage/csc148$Doctest_isEven.coverage" NAME="Doctest isEven Coverage Results" MODIFIED="1474135985809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ramp_up" />
     <SUITE FILE_PATH="coverage/csc148$Unittests_in_ex5_test.coverage" NAME="Unittests in ex5_test Coverage Results" MODIFIED="1478478921520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex5" />
-    <SUITE FILE_PATH="coverage/csc148$Doctest_LinkedListRec_insert_first.coverage" NAME="Doctest LinkedListRec.insert_first Coverage Results" MODIFIED="1477624621610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab7" />
     <SUITE FILE_PATH="coverage/csc148$Unittests_in_unitTest.coverage" NAME="Unittests in unitTest Coverage Results" MODIFIED="1474137124962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ramp_up" />
-    <SUITE FILE_PATH="coverage/csc148$Unittests_in_TestCar__3_.coverage" NAME="Unittests in TestCar (3) Coverage Results" MODIFIED="1474342252910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex1" />
-    <SUITE FILE_PATH="coverage/csc148$Doctest_LinkedListRec___len__.coverage" NAME="Doctest LinkedListRec.__len__ Coverage Results" MODIFIED="1477621689716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab7" />
     <SUITE FILE_PATH="coverage/csc148$Unittest_TestCar_test_move_simple.coverage" NAME="Unittest TestCar.test_move_simple Coverage Results" MODIFIED="1474341324869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex1" />
-    <SUITE FILE_PATH="coverage/csc148$Unittests_in_TestPeopleChain.coverage" NAME="Unittests in TestPeopleChain Coverage Results" MODIFIED="1475870131068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex3" />
-    <SUITE FILE_PATH="coverage/csc148$Doctest_LinkedListRec_pop.coverage" NAME="Doctest LinkedListRec.pop Coverage Results" MODIFIED="1477624854858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab7" />
-    <SUITE FILE_PATH="coverage/csc148$Unittest_TestPeopleChain_test_get_nth_on_out_of_bounds_index.coverage" NAME="Unittest TestPeopleChain.test_get_nth_on_out_of_bounds_index Coverage Results" MODIFIED="1475870088313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex3" />
     <SUITE FILE_PATH="coverage/csc148$Unittests_in_TestCar__2_.coverage" NAME="Unittests in TestCar (2) Coverage Results" MODIFIED="1474341534283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex1" />
     <SUITE FILE_PATH="coverage/csc148$Doctest_LinkedListRec_count.coverage" NAME="Doctest LinkedListRec.count Coverage Results" MODIFIED="1477623061396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab7" />
-    <SUITE FILE_PATH="coverage/csc148$Doctests_in_ex5.coverage" NAME="Doctests in ex5 Coverage Results" MODIFIED="1478478946850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex5" />
     <SUITE FILE_PATH="coverage/csc148$Doctests_in_welcome.coverage" NAME="Doctests in welcome Coverage Results" MODIFIED="1474134964785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/csc148$Doctest_PriorityQueue_remove.coverage" NAME="Doctest PriorityQueue.remove Coverage Results" MODIFIED="1475881028064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assignments/Assignment1" />
-    <SUITE FILE_PATH="coverage/csc148$ex5.coverage" NAME="ex5 Coverage Results" MODIFIED="1478478975344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex5" />
+    <SUITE FILE_PATH="coverage/csc148$ex5.coverage" NAME="ex5 Coverage Results" MODIFIED="1478479116081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex5" />
     <SUITE FILE_PATH="coverage/csc148$Unittest_TestDocTest_test_isEven__1_.coverage" NAME="Unittest TestDocTest.test_isEven (1) Coverage Results" MODIFIED="1474137102141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ramp_up" />
-    <SUITE FILE_PATH="coverage/csc148$Doctest_LinkedListRec___contains__.coverage" NAME="Doctest LinkedListRec.__contains__ Coverage Results" MODIFIED="1477622638448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab7" />
     <SUITE FILE_PATH="coverage/csc148$FileIO.coverage" NAME="FileIO Coverage Results" MODIFIED="1474134680895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ramp_up" />
-    <SUITE FILE_PATH="coverage/csc148$experiment.coverage" NAME="experiment Coverage Results" MODIFIED="1475882645134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assignments/Assignment1" />
     <SUITE FILE_PATH="coverage/csc148$Unittest_TestCar_test_dispatch.coverage" NAME="Unittest TestCar.test_dispatch Coverage Results" MODIFIED="1474379847448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex1" />
     <SUITE FILE_PATH="coverage/csc148$Unittest_TestCarWithHypothesis_test_car_has_initial_fuel_set.coverage" NAME="Unittest TestCarWithHypothesis.test_car_has_initial_fuel_set Coverage Results" MODIFIED="1474379162911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex1" />
     <SUITE FILE_PATH="coverage/csc148$Doctest_merge_alternating.coverage" NAME="Doctest merge_alternating Coverage Results" MODIFIED="1475869880246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex3" />
     <SUITE FILE_PATH="coverage/csc148$Unittests_in_ex2_test.coverage" NAME="Unittests in ex2_test Coverage Results" MODIFIED="1475546931862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex2" />
     <SUITE FILE_PATH="coverage/csc148$Unittests_in_TestStack.coverage" NAME="Unittests in TestStack Coverage Results" MODIFIED="1475870109061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex3" />
-    <SUITE FILE_PATH="coverage/csc148$module.coverage" NAME="module Coverage Results" MODIFIED="1474134213436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ramp_up" />
+    <SUITE FILE_PATH="coverage/csc148$Unittests_in_ex6_test.coverage" NAME="Unittests in ex6_test Coverage Results" MODIFIED="1478749782429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex6" />
     <SUITE FILE_PATH="coverage/csc148$Unittest_TestDocTest_test_findGreater.coverage" NAME="Unittest TestDocTest.test_findGreater Coverage Results" MODIFIED="1474136952121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ramp_up" />
+    <SUITE FILE_PATH="coverage/csc148$Unittests_in_BSTNumLessThanTest.coverage" NAME="Unittests in BSTNumLessThanTest Coverage Results" MODIFIED="1478749667240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex6" />
+    <SUITE FILE_PATH="coverage/csc148$Unittests_in_BSTItemsTest.coverage" NAME="Unittests in BSTItemsTest Coverage Results" MODIFIED="1478749776313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex6" />
+    <SUITE FILE_PATH="coverage/csc148$Unittests_in_ex1_test2.coverage" NAME="Unittests in ex1_test2 Coverage Results" MODIFIED="1474342597364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex1" />
+    <SUITE FILE_PATH="coverage/csc148$Doctests_in_DocTest.coverage" NAME="Doctests in testme Coverage Results" MODIFIED="1474163112784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ramp_up" />
+    <SUITE FILE_PATH="coverage/csc148$ex5_test.coverage" NAME="ex5_test Coverage Results" MODIFIED="1478479134496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex5" />
+    <SUITE FILE_PATH="coverage/csc148$Doctest_LinkedListRec_pop_first__1_.coverage" NAME="Doctest LinkedListRec.pop_first (1) Coverage Results" MODIFIED="1477623381081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab7" />
+    <SUITE FILE_PATH="coverage/csc148$Doctest_LinkedListRec_pop_first.coverage" NAME="Doctest LinkedListRec.pop_first Coverage Results" MODIFIED="1477623925440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab7" />
+    <SUITE FILE_PATH="coverage/csc148$Doctest_LinkedListRec_map.coverage" NAME="Doctest LinkedListRec.map Coverage Results" MODIFIED="1477625965096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab7" />
+    <SUITE FILE_PATH="coverage/csc148$Unittests_in_ex1_test.coverage" NAME="Unittests in ex1_test Coverage Results" MODIFIED="1474379113376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex1" />
+    <SUITE FILE_PATH="coverage/csc148$Doctest_LinkedListRec___getitem__.coverage" NAME="Doctest LinkedListRec.__getitem__ Coverage Results" MODIFIED="1477622337694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab7" />
+    <SUITE FILE_PATH="coverage/csc148$welcome.coverage" NAME="welcome Coverage Results" MODIFIED="1473281591108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/csc148$Doctest_isEven.coverage" NAME="Doctest isEven Coverage Results" MODIFIED="1474135985809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ramp_up" />
+    <SUITE FILE_PATH="coverage/csc148$Doctest_LinkedListRec_insert_first.coverage" NAME="Doctest LinkedListRec.insert_first Coverage Results" MODIFIED="1477624621610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab7" />
+    <SUITE FILE_PATH="coverage/csc148$Unittests_in_TestCar__3_.coverage" NAME="Unittests in TestCar (3) Coverage Results" MODIFIED="1474342252910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex1" />
+    <SUITE FILE_PATH="coverage/csc148$Doctest_LinkedListRec___len__.coverage" NAME="Doctest LinkedListRec.__len__ Coverage Results" MODIFIED="1477621689716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab7" />
+    <SUITE FILE_PATH="coverage/csc148$Unittests_in_TestPeopleChain.coverage" NAME="Unittests in TestPeopleChain Coverage Results" MODIFIED="1475870131068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex3" />
+    <SUITE FILE_PATH="coverage/csc148$Doctest_LinkedListRec_pop.coverage" NAME="Doctest LinkedListRec.pop Coverage Results" MODIFIED="1477624854858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab7" />
+    <SUITE FILE_PATH="coverage/csc148$Unittest_TestPeopleChain_test_get_nth_on_out_of_bounds_index.coverage" NAME="Unittest TestPeopleChain.test_get_nth_on_out_of_bounds_index Coverage Results" MODIFIED="1475870088313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex3" />
+    <SUITE FILE_PATH="coverage/csc148$Doctests_in_ex5.coverage" NAME="Doctests in ex5 Coverage Results" MODIFIED="1478478946850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex5" />
+    <SUITE FILE_PATH="coverage/csc148$Doctest_LinkedListRec___contains__.coverage" NAME="Doctest LinkedListRec.__contains__ Coverage Results" MODIFIED="1477622638448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab7" />
+    <SUITE FILE_PATH="coverage/csc148$experiment.coverage" NAME="experiment Coverage Results" MODIFIED="1475882645134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assignments/Assignment1" />
+    <SUITE FILE_PATH="coverage/csc148$module.coverage" NAME="module Coverage Results" MODIFIED="1474134213436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ramp_up" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -78,21 +83,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ex5.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/exercises/ex5/ex5.py">
+      <file leaf-file-name="ex6.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/exercises/ex6/ex6.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="249" column="20" selection-start-line="249" selection-start-column="20" selection-end-line="249" selection-end-column="20" />
+            <state relative-caret-position="728">
+              <caret line="180" column="28" selection-start-line="180" selection-start-column="28" selection-end-line="180" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ex5_test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exercises/ex5/ex5_test.py">
+      <file leaf-file-name="ex6_test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/exercises/ex6/ex6_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="171" column="0" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
+            <state relative-caret-position="204">
+              <caret line="39" column="38" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -158,6 +163,7 @@
         <option value="$PROJECT_DIR$/labs/lab8/tree.py" />
         <option value="$PROJECT_DIR$/labs/lab8/tiling.py" />
         <option value="$PROJECT_DIR$/exercises/ex5/ex5.py" />
+        <option value="$PROJECT_DIR$/exercises/ex6/ex6.py" />
       </list>
     </option>
   </component>
@@ -220,61 +226,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="csc148" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="csc148" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="csc148" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="csc148" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="csc148" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exercises" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ex5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="csc148" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="csc148" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exercises" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches">
-        <subPane />
-      </pane>
       <pane id="Scope">
         <subPane subId="Problems" />
         <subPane subId="Project Files">
@@ -336,6 +287,79 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="csc148" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="csc148" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="csc148" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="csc148" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="csc148" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exercises" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ex6" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="csc148" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="csc148" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exercises" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ex5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="csc148" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="csc148" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exercises" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches">
+        <subPane />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -369,46 +393,8 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ex5">
-    <configuration default="false" name="Doctests in Tree" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/labs/lab8" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="csc148" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/labs/lab8/tree.py" />
-      <option name="CLASS_NAME" value="Tree" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_CLASS" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="tiling" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/labs/lab8" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="csc148" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/labs/lab8/tiling.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in ex5_test" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Unittests in ex6_test">
+    <configuration default="false" name="Unittest TestTraversals.test_root_position" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -420,10 +406,10 @@
       <module name="csc148" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exercises/ex5/ex5_test.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="TestTraversals" />
+      <option name="METHOD_NAME" value="test_root_position" />
       <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
       <option name="PUREUNITTEST" value="true" />
@@ -431,27 +417,7 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Doctests in ex5" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exercises/ex5" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="csc148" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exercises/ex5/ex5.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="ex5" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="ex5_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -464,9 +430,78 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="csc148" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exercises/ex5/ex5.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exercises/ex5/ex5_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in BSTNumLessThanTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exercises/ex6" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="csc148" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exercises/ex6/ex6_test.py" />
+      <option name="CLASS_NAME" value="BSTNumLessThanTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_CLASS" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in BSTItemsTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exercises/ex6" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="csc148" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exercises/ex6/ex6_test.py" />
+      <option name="CLASS_NAME" value="BSTItemsTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_CLASS" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in ex6_test" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exercises/ex6" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="csc148" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exercises/ex6/ex6_test.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
@@ -555,6 +590,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -694,19 +735,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.linked_list_v2" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Doctests in Tree" />
-      <item index="2" class="java.lang.String" itemvalue="Python.tiling" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in ex5_test" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Doctests in ex5" />
-      <item index="5" class="java.lang.String" itemvalue="Python.ex5" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest TestTraversals.test_root_position" />
+      <item index="2" class="java.lang.String" itemvalue="Python.ex5_test" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in BSTNumLessThanTest" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in BSTItemsTest" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in ex6_test" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.ex5" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Doctests in ex5" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in ex5_test" />
-        <item index="3" class="java.lang.String" itemvalue="Python.tiling" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Doctests in Tree" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in ex6_test" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in BSTItemsTest" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest TestTraversals.test_root_position" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in BSTNumLessThanTest" />
+        <item index="4" class="java.lang.String" itemvalue="Python.ex5_test" />
       </list>
     </recent_temporary>
   </component>
@@ -727,35 +768,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Doctest_Tree_insert - 2016.11.03 at 10h 03m 19s.xml">
-      <configuration name="Doctest Tree.insert" configurationId="tests" />
+    <history-entry file="Unittest_TestTraversals_test_root_position - 2016.11.09 at 22h 49m 31s.xml">
+      <configuration name="Unittest TestTraversals.test_root_position" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctests_in_Tree - 2016.11.03 at 10h 03m 25s.xml">
-      <configuration name="Doctests in Tree" configurationId="tests" />
+    <history-entry file="Unittests_in_BSTItemsTest - 2016.11.09 at 22h 48m 21s.xml">
+      <configuration name="Unittests in BSTItemsTest" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctests_in_ex5 - 2016.11.06 at 19h 35m 42s.xml">
-      <configuration name="Doctests in ex5" configurationId="tests" />
+    <history-entry file="Unittests_in_BSTItemsTest - 2016.11.09 at 22h 49m 36s.xml">
+      <configuration name="Unittests in BSTItemsTest" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctests_in_ex5 - 2016.11.06 at 19h 35m 47s.xml">
-      <configuration name="Doctests in ex5" configurationId="tests" />
+    <history-entry file="Unittests_in_BSTNumLessThanTest - 2016.11.09 at 22h 43m 31s.xml">
+      <configuration name="Unittests in BSTNumLessThanTest" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_ex5_test - 2016.11.06 at 19h 22m 23s.xml">
-      <configuration name="Unittests in ex5_test" configurationId="tests" />
+    <history-entry file="Unittests_in_BSTNumLessThanTest - 2016.11.09 at 22h 45m 05s.xml">
+      <configuration name="Unittests in BSTNumLessThanTest" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_ex5_test - 2016.11.06 at 19h 22m 43s.xml">
-      <configuration name="Unittests in ex5_test" configurationId="tests" />
+    <history-entry file="Unittests_in_BSTNumLessThanTest - 2016.11.09 at 22h 46m 43s.xml">
+      <configuration name="Unittests in BSTNumLessThanTest" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_ex5_test - 2016.11.06 at 19h 25m 09s.xml">
-      <configuration name="Unittests in ex5_test" configurationId="tests" />
+    <history-entry file="Unittests_in_BSTNumLessThanTest - 2016.11.09 at 22h 47m 22s.xml">
+      <configuration name="Unittests in BSTNumLessThanTest" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_ex5_test - 2016.11.06 at 19h 27m 39s.xml">
-      <configuration name="Unittests in ex5_test" configurationId="tests" />
+    <history-entry file="Unittests_in_BSTNumLessThanTest - 2016.11.09 at 22h 47m 47s.xml">
+      <configuration name="Unittests in BSTNumLessThanTest" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_ex5_test - 2016.11.06 at 19h 32m 10s.xml">
-      <configuration name="Unittests in ex5_test" configurationId="tests" />
+    <history-entry file="Unittests_in_ex6_test - 2016.11.09 at 22h 49m 11s.xml">
+      <configuration name="Unittests in ex6_test" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_ex5_test - 2016.11.06 at 19h 35m 22s.xml">
-      <configuration name="Unittests in ex5_test" configurationId="tests" />
+    <history-entry file="Unittests_in_ex6_test - 2016.11.09 at 22h 49m 42s.xml">
+      <configuration name="Unittests in ex6_test" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -835,14 +876,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/names.txt" />
-    <entry file="file://$PROJECT_DIR$/mislaneous/test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mislaneous/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -1099,7 +1132,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="178" column="0" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1107,22 +1139,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/exercises/ex5/ex5_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="171" column="0" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
+        <state relative-caret-position="136">
+          <caret line="169" column="26" selection-start-line="169" selection-start-column="26" selection-end-line="169" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/exercises/ex5/ex5.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
+        <state relative-caret-position="17">
           <caret line="249" column="20" selection-start-line="249" selection-start-column="20" selection-end-line="249" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exercises/ex6/ex6_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="39" column="38" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exercises/ex6/ex6.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="728">
+          <caret line="180" column="28" selection-start-line="180" selection-start-column="28" selection-end-line="180" selection-end-column="28" />
           <folding />
         </state>
       </provider>
