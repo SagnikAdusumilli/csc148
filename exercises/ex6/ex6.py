@@ -34,6 +34,7 @@ class BinarySearchTree:
      - (BST Property) All items in _left are <= _root,
        and all items in _right are >= _root.
     """
+
     def __init__(self, root):
         """Initialize a new BST with a given root value.
 
@@ -99,10 +100,10 @@ class BinarySearchTree:
         else:
             return max(self._left.height(), self._right.height()) + 1
 
-##############################################################################
-# Task 1: More BST practice
-##############################################################################
-    # TODO: Implement this method!
+            ##############################################################################
+            # Task 1: More BST practice
+            ##############################################################################
+
     def num_less_than(self, item):
         """Return the number of items in this BST that are less than <item>.
 
@@ -123,9 +124,6 @@ class BinarySearchTree:
 
             return count
 
-
-
-    # TODO: Implement this method!
     def items_at_depth(self, d):
         """Return a sorted list of all items in this BST at depth <d>.
 
@@ -145,12 +143,11 @@ class BinarySearchTree:
         else:
             lst = []
 
-            lst.extend(self._left.items_at_depth(d-1))
-            lst.extend(self._right.items_at_depth(d-1))
+            lst.extend(self._left.items_at_depth(d - 1))
+            lst.extend(self._right.items_at_depth(d - 1))
 
             return lst
 
-    # TODO: Implement this method!
     def levels(self):
         """Return a list of items in the tree, separated by level.
 
@@ -163,24 +160,12 @@ class BinarySearchTree:
         @rtype: list[(int, list)]
         """
         lst = []
-        for i in range(1, self.height()+1):
+        for i in range(1, self.height() + 1):
             lst.append((i, self.items_at_depth(i)))
 
         return lst
 
-    def get_level(self, lvl):
-        """ return a list containging list of items in that level
-
-        @type self: BinarySearchTree
-        @rtype: list[int]
-        """
-
-        if self.is_empty():
-            return []
-        else:
-          lst = [self._root]
-
-
 if __name__ == '__main__':
     import python_ta
+
     python_ta.check_all()

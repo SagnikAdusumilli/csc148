@@ -53,6 +53,14 @@ class BSTLevelsTest(unittest.TestCase):
         bst = BinarySearchTree(1)
         self.assertEqual(bst.levels(), [(1, [1])])
 
+    def test_compex(self):
+        bst = BinarySearchTree(5)
+        bst._right = BinarySearchTree(6)
+        bst._left = BinarySearchTree(2)
+        bst._left._right = BinarySearchTree(3)
+
+        self.assertEqual(bst.levels(), [(1, [5]), (2, [2, 6]), (3, [3])])
+
 
 if __name__ == '__main__':
     unittest.main(exit=False)
