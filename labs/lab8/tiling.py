@@ -146,10 +146,11 @@ def tile_with_dominoes(n):
         # TODO (1)
         # Compute four different tilings of a 2^(n-1) by 2^(n-1) grid,
         # for the four different quadrants.
-        upper_left_tiling = [0, 0]
-        upper_right_tiling = [2**(n-1), 0]
-        lower_left_tiling = [0, 2**(n-2)]
-        lower_right_tiling = [2**(n-1), 2**(n-2)]
+        q1 = tile_with_dominoes(n-1)
+        q2 = tile_with_dominoes(n-1)
+        q3 = tile_with_dominoes(n-1)
+        q4 = tile_with_dominoes(n-1)
+
 
         # TODO (2)
         # Each tiling will have square coordinates between 0 and 2^(n-1),
@@ -159,8 +160,17 @@ def tile_with_dominoes(n):
         #
         # Remember that the positions here do *not* depend on SQUARE_SIZE.
 
+        for dom in q2:
+            dom.add_offset(2**(n-1), 0)
+
+        for dom in q3:
+            dom.add_offset(0, 2**(n-1))
+
+        for dom in q4:
+            dom.add_offset(2**(n-1), 2**(n-1))
+
         # TODO (3)
-        # Return the combined tiling for all four quadrants.
+        return q1 + q2 + q3 + q4
 
 
 def _tile_2_by_2():
@@ -170,9 +180,19 @@ def _tile_2_by_2():
 
     @rtype: list[Domino]
     """
-    return [Domino((0, 0), (0, 1)), Domino((1, 0), (1, 1))]
+    r = random.randint(0, 1)
+
+    # 0 = veritical
+    if r == 0:
+        dom1 = Domino((0, 0), (0, 1))
+        dom2 = Domino((1, 0), (1, 1))
+    else:
+        dom1 = Domino((0, 0), (1, 0))
+        dom2 = Domino((0, 1), (1, 1))
+
+    return [dom1, dom2]
 
 
 if __name__ == '__main__':
-    draw_grid(1)
+    draw_grid(int(input()))
     input('Press Enter to exit\n')
