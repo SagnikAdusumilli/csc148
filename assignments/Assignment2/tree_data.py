@@ -80,9 +80,15 @@ class AbstractTree:
         self._subtrees = subtrees
         self._parent_tree = None
 
-        # TODO: Complete this constructor by doing two things:
         # 1. Initialize self.colour and self.data_size, according to the docstring.
-        # 2. Properly set all _parent_tree attributes in self._subtrees
+        self.color = (randint(0, 255), randint(0, 255), randint(0, 255))
+        if self._subtrees == []:
+            self.data_size = data_size
+        else:
+         # 2. Properly set all _parent_tree attributes in self._subtrees
+            for tree in subtrees:
+                self.data_size += tree.data_size
+                tree._parent_tree = self
 
     def is_empty(self):
         """Return True if this tree is empty.
@@ -112,7 +118,13 @@ class AbstractTree:
         # Programming tip: use "tuple unpacking assignment" to easily extract
         # coordinates of a rectangle, as follows.
         # x, y, width, height = rect
-        pass
+
+        # if the size is 0:
+        if self.data_size == 0:
+            return []
+        # if self is a leaf
+        elif self._subtrees == 0:
+            return rect, self.colors
 
     def get_separator(self):
         """Return the string used to separate nodes in the string
@@ -150,14 +162,44 @@ class FileSystemTree(AbstractTree):
         @type self: FileSystemTree
         @type path: str
         @rtype: None
+        >>> t1 = FileSystemTree('C:/Users/Sagnik/Documents/U of T/Courses/Csc165/e1.pdf')
+        >>> t1.data_size
+        55433
+        >>> t2 = FileSystemTree('C:/Users/Sagnik/Documents/U of T/Courses/CSC148/csc148/assignments/Assignment1')
+        >>> t2.data_size
+        189978
         """
-        # TODO: implement this method according to its docstring.
         # Remember that you should recursively go through the file system
         # and create new FileSystemTree objects for each file and folder
         # encountered.
         #
         # Also remember to make good use of the superclass constructor!
-        pass
+
+        # check if it is a file, it will contain a dot
+        if '.' in os.path.basename(path):
+            AbstractTree.__init__(self, os.path.basename(path), [], os.path.getsize(path))
+        else:
+            dirs = os.listdir(path)
+            sub_trees = []
+            self.data_size = 0
+            for sub_dir in dirs:
+                tree = FileSystemTree(os.path.join(path + '/' + sub_dir))
+                sub_trees.append(tree)
+                self.data_size += tree.data_size
+
+            AbstractTree.__init__(self, os.path.basename(path), sub_trees, 0)
+
+    def get_separator(self):
+
+        if self._subtrees == []:
+            return self._root
+        else:
+            result = ''
+            for tree in self._subtrees:
+                result += '/' + tree.get_separator()
+
+            return result
+
 
 
 if __name__ == '__main__':

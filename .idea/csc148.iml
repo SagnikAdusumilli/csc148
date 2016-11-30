@@ -38,6 +38,7 @@
       <sourceFolder url="file://$MODULE_DIR$/assignments" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/assignments/Assignment1" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/exercises/ex4" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/assignments/Assignment2" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

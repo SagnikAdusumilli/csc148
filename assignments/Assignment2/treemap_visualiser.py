@@ -141,7 +141,7 @@ if __name__ == '__main__':
     # call, with the '' replaced by a path like
     # 'C:\\Users\\David\\Documents\\csc148\\assignments' (Windows) or
     # '/Users/dianeh/Documents/courses/csc148/assignments' (OSX)
-    # run_treemap_file_system('')
+    run_treemap_file_system('')
 
     # To check your work for Task 5, uncomment the following function call.
     # run_treemap_population()
