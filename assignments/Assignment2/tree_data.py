@@ -123,7 +123,7 @@ class AbstractTree:
         if self.data_size == 0:
             return []
         # if self is a leaf
-        elif self._subtrees == 0:
+        elif self._subtrees == []:
             return rect, self.colors
 
     def get_separator(self):
