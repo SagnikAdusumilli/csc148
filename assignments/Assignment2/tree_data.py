@@ -13,7 +13,6 @@ computer's file system.
 """
 import os
 from random import randint
-import math
 
 
 class AbstractTree:
@@ -28,7 +27,7 @@ class AbstractTree:
     === Public Attributes ===
     @type data_size: int
         The total size of all leaves of this tree.
-    @type colour: (int, int, int)
+    @type color: (int, int, int)
         The RGB colour value of the root of this tree.
         Note: only the colours of leaves will influence what the user sees.
 
@@ -55,6 +54,7 @@ class AbstractTree:
 
     - if _parent_tree is not empty, then self is in _parent_tree._subtrees
     """
+
     def __init__(self, root, subtrees, data_size=0):
         """Initialize a new AbstractTree.
 
@@ -81,11 +81,11 @@ class AbstractTree:
         self._parent_tree = None
 
         # 1. Initialize self.colour and self.data_size, according to the docstring.
-        self.color = (randint(0, 255), randint(0, 255), randint(0, 255))
+        self.color = (randint(30, 255), randint(30, 255), randint(30, 255))
         if self._subtrees == []:
             self.data_size = data_size
         else:
-         # 2. Properly set all _parent_tree attributes in self._subtrees
+            # 2. Properly set all _parent_tree attributes in self._subtrees
             for tree in subtrees:
                 self.data_size += tree.data_size
                 tree._parent_tree = self
@@ -111,7 +111,6 @@ class AbstractTree:
             Input is in the pygame format: (x, y, width, height)
         @rtype: list[((int, int, int, int), (int, int, int))]
         """
-        # TODO: implement this method!
         # Read the handout carefully to help get started identifying base cases,
         # and the outline of a recursive step.
         #
@@ -124,7 +123,34 @@ class AbstractTree:
             return []
         # if self is a leaf
         elif self._subtrees == []:
-            return rect, self.colors
+            return [(rect, self.color)]
+        else:
+            x, y, width, height = rect
+            rect_lst = []
+            pos_x = x
+            pos_y = y
+
+            for i in range(len(self._subtrees)):
+                sub_tree = self._subtrees[i]
+
+                if i < len(self._subtrees) - 1:
+                    percent_area = sub_tree.data_size / self.data_size
+                    if width > height:
+                        new_width = int(percent_area * width)
+                        rect_lst.extend(sub_tree.generate_treemap((pos_x, pos_y, new_width, height)))
+                        pos_x += new_width
+                    else:
+                        new_height = int(percent_area * height)
+                        rect_lst.extend(sub_tree.generate_treemap((pos_x, pos_y, width, new_height)))
+                        pos_y += new_height
+                else:
+                    # this is the last sub_tree
+                    if width > height:
+                        rect_lst.extend(sub_tree.generate_treemap((pos_x, pos_y, width - pos_x, height)))
+                    else:
+                        rect_lst.extend(sub_tree.generate_treemap((pos_x, pos_y, width, height - pos_y)))
+
+            return rect_lst
 
     def get_separator(self):
         """Return the string used to separate nodes in the string
@@ -141,6 +167,49 @@ class AbstractTree:
         """
         raise NotImplementedError
 
+    def get_leaves(self):
+        """Return a list of leaves of this tree
+        @type self: AbstractTree
+        @rtype [AbstractTree]
+        """
+
+        if self._subtrees == []:
+            return [self]
+        else:
+            lst = []
+            for tree in self._subtrees:
+                lst.extend(tree.get_leaves())
+
+            return lst
+
+    def delete_leaf(self, leaf):
+        """delete <leaf> from this tree
+        @type self: AbstractTree
+        @type leaf: AbstractTree
+        @rtype: None
+        Precondtions:
+            leaf._subtrees == []
+        """
+        if self._root == leaf._root:
+            self._parent_tree.data_size = self._parent_tree.data_size - self.data_size
+
+            subtrees = self._parent_tree.get_subtrees()
+            for tree in subtrees:
+                if tree == leaf:
+                    subtrees.remove(leaf)
+
+            leaf._parent_tree = None
+        else:
+            for tree in self._subtrees:
+                tree.delete_leaf(leaf)
+
+    def get_subtrees(self):
+        """return the list of subtrees of this tree
+        @type self: AbstractTree
+        @rtype [AbstractTree]
+        """
+        return self._subtrees
+
 
 class FileSystemTree(AbstractTree):
     """A tree representation of files and folders in a file system.
@@ -154,6 +223,7 @@ class FileSystemTree(AbstractTree):
     The data_size attribute for regular files as simply the size of the file,
     as reported by os.path.getsize.
     """
+
     def __init__(self, path):
         """Store the file tree structure contained in the given file or folder.
 
@@ -167,7 +237,7 @@ class FileSystemTree(AbstractTree):
         55433
         >>> t2 = FileSystemTree('C:/Users/Sagnik/Documents/U of T/Courses/CSC148/csc148/assignments/Assignment1')
         >>> t2.data_size
-        189978
+        68867
         """
         # Remember that you should recursively go through the file system
         # and create new FileSystemTree objects for each file and folder
@@ -176,33 +246,35 @@ class FileSystemTree(AbstractTree):
         # Also remember to make good use of the superclass constructor!
 
         # check if it is a file, it will contain a dot
-        if '.' in os.path.basename(path):
+        if os.path.isfile(path):
             AbstractTree.__init__(self, os.path.basename(path), [], os.path.getsize(path))
         else:
             dirs = os.listdir(path)
             sub_trees = []
             self.data_size = 0
             for sub_dir in dirs:
-                tree = FileSystemTree(os.path.join(path + '/' + sub_dir))
+                tree = FileSystemTree(os.path.join(path, sub_dir))
                 sub_trees.append(tree)
-                self.data_size += tree.data_size
 
             AbstractTree.__init__(self, os.path.basename(path), sub_trees, 0)
 
     def get_separator(self):
+        """
+        Preconditions:
+        <self> is an empty tree
+        """
 
-        if self._subtrees == []:
+        if self._parent_tree is None:
             return self._root
-        else:
-            result = ''
-            for tree in self._subtrees:
-                result += '/' + tree.get_separator()
 
-            return result
+        result = ''
+        result += self._parent_tree.get_separator() + '/' + self._root
 
+        return result
 
 
 if __name__ == '__main__':
     import python_ta
+
     # Remember to change this to check_all when cleaning up your code.
     python_ta.check_errors(config='pylintrc.txt')

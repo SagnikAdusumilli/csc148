@@ -16,12 +16,11 @@ import pygame
 from tree_data import FileSystemTree
 from population import PopulationTree
 
-
 # Screen dimensions and coordinates
 ORIGIN = (0, 0)
 WIDTH = 1024
-HEIGHT = 768
-FONT_HEIGHT = 30                       # The height of the text display.
+HEIGHT = 600
+FONT_HEIGHT = 30  # The height of the text display.
 TREEMAP_HEIGHT = HEIGHT - FONT_HEIGHT  # The height of the treemap display.
 
 # Font to use for the treemap program.
@@ -61,6 +60,19 @@ def render_display(screen, tree, text):
     pygame.draw.rect(screen, pygame.color.THECOLORS['black'],
                      (0, 0, WIDTH, HEIGHT))
     # TODO: Implement this function!
+    # get all the rectangles of the tree
+    rects = tree.generate_treemap((0, 0, WIDTH, TREEMAP_HEIGHT))
+
+    # draw the rectangles
+
+    for rect in rects:
+        dimentions = rect[0]
+        color = rect[1]
+
+        assert len(dimentions) == 4 and len(color) == 3, str(dimentions) + ' ' + str(color)
+        pygame.draw.rect(screen, color, dimentions)
+
+    _render_text(screen, text)
 
     # This must be called *after* all other pygame functions have run.
     pygame.display.flip()
@@ -99,16 +111,57 @@ def event_loop(screen, tree):
     # But feel free to remove it, and/or add new variables, to help keep
     # track of the state of the program.
     selected_leaf = None
+    display_text = 'hello'
+    _render_text(screen, display_text)
 
     while True:
         # Wait for an event
         event = pygame.event.poll()
         if event.type == pygame.QUIT:
+            pygame.quit()
             return
 
         # TODO: detect and respond to other types of events.
         # Remember to call render_display if any data_sizes change,
         # as the treemap will change in this case.
+
+        elif event.type == pygame.MOUSEBUTTONUP:
+            clicked_leaf = None
+            # get the color of the pixel
+            rgba_colors = screen.get_at(event.pos)
+            color = (rgba_colors[0], rgba_colors[1], rgba_colors[2])
+
+            # get the leaves of the tree
+            leaves = tree.get_leaves()
+
+            # find the leaf with the corresponding color
+            for leaf in leaves:
+                if leaf.color == color:
+                    clicked_leaf = leaf
+
+            # check for left-click
+            if event.button == 1:
+                # update the display
+                if clicked_leaf is not None:
+                    selected_leaf = clicked_leaf
+                    render_display(screen, tree, selected_leaf.get_separator() + " (" + str(selected_leaf.data_size)
+                                   + ")")
+
+            # check for right-click
+            if event.button == 3:
+                if clicked_leaf == selected_leaf and clicked_leaf is not None:
+                    tree.delete_leaf(selected_leaf)
+                    selected_leaf = None
+                    render_display(screen, tree, '')
+                else:
+                    if clicked_leaf is not None:
+                        tree.delete_leaf(clicked_leaf)
+                        if selected_leaf is not None:
+                            render_display(screen, tree,
+                                           selected_leaf.get_separator() + " (" + str(selected_leaf.data_size)
+                                           + ")")
+                        else:
+                            render_display(screen, tree, '')
 
 
 def run_treemap_file_system(path):
@@ -134,6 +187,7 @@ def run_treemap_population():
 
 if __name__ == '__main__':
     import python_ta
+
     # Remember to change this to check_all when cleaning up your code.
     python_ta.check_errors(config='pylintrc.txt')
 
@@ -141,7 +195,8 @@ if __name__ == '__main__':
     # call, with the '' replaced by a path like
     # 'C:\\Users\\David\\Documents\\csc148\\assignments' (Windows) or
     # '/Users/dianeh/Documents/courses/csc148/assignments' (OSX)
-    run_treemap_file_system('')
+    # C:/Users/Sagnik/Documents/U of T/Courses/CSC148/csc148/assignments/Assignment1
+    run_treemap_file_system('C:/Users/Sagnik/Documents/U of T/Courses/CSC148/csc148/exercises')
 
     # To check your work for Task 5, uncomment the following function call.
     # run_treemap_population()

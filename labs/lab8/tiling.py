@@ -116,11 +116,7 @@ class Domino:
         x_coords = [self.position[0][0], self.position[1][0]]
         y_coords = [self.position[0][1], self.position[1][1]]
 
-        pygame.draw.rect(screen, self.colour,
-                         (min(x_coords) * SQUARE_SIZE,
-                          min(y_coords) * SQUARE_SIZE,
-                          (max(x_coords) + 1) * SQUARE_SIZE,
-                          (max(y_coords) + 1) * SQUARE_SIZE))
+        pygame.draw.rect(screen, self.colour,(min(x_coords) * SQUARE_SIZE, min(y_coords) * SQUARE_SIZE,(max(x_coords) + 1) * SQUARE_SIZE,(max(y_coords) + 1) * SQUARE_SIZE))
 
 
 # TODO: implement this function!

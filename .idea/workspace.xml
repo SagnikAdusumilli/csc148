@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="749951f0-cf83-490c-93ab-44f565cd01be" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/csc148.iml" afterPath="$PROJECT_DIR$/.idea/csc148.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assignments/Assignment2/tree_data.py" afterPath="$PROJECT_DIR$/assignments/Assignment2/tree_data.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assignments/Assignment2/treemap_visualiser.py" afterPath="$PROJECT_DIR$/assignments/Assignment2/treemap_visualiser.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labs/lab8/tiling.py" afterPath="$PROJECT_DIR$/labs/lab8/tiling.py" />
     </list>
     <ignored path="csc148.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,9 +28,9 @@
     <SUITE FILE_PATH="coverage/csc148$Unittests_in_TestCar__1_.coverage" NAME="Unittests in TestCar (1) Coverage Results" MODIFIED="1474340058708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex1" />
     <SUITE FILE_PATH="coverage/csc148$generator.coverage" NAME="generator Coverage Results" MODIFIED="1475882477408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assignments/Assignment1" />
     <SUITE FILE_PATH="coverage/csc148$Doctest_LinkedListRec_insert.coverage" NAME="Doctest LinkedListRec.insert Coverage Results" MODIFIED="1477625256649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab7" />
-    <SUITE FILE_PATH="coverage/csc148$Doctest_FileSystemTree___init__.coverage" NAME="Doctest FileSystemTree.__init__ Coverage Results" MODIFIED="1480479919054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assignments/Assignment2" />
+    <SUITE FILE_PATH="coverage/csc148$Doctest_FileSystemTree___init__.coverage" NAME="Doctest FileSystemTree.__init__ Coverage Results" MODIFIED="1480627177114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assignments/Assignment2" />
     <SUITE FILE_PATH="coverage/csc148$Unittests_in_TestCarWithHypothesis.coverage" NAME="Unittests in TestCarWithHypothesis Coverage Results" MODIFIED="1474379122018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex1" />
-    <SUITE FILE_PATH="coverage/csc148$treemap_visualiser.coverage" NAME="treemap_visualiser Coverage Results" MODIFIED="1480473384600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assignments/Assignment2" />
+    <SUITE FILE_PATH="coverage/csc148$treemap_visualiser.coverage" NAME="treemap_visualiser Coverage Results" MODIFIED="1480627283806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assignments/Assignment2" />
     <SUITE FILE_PATH="coverage/csc148$Doctest_isEven__1_.coverage" NAME="Doctest isEven (1) Coverage Results" MODIFIED="1474135015144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ramp_up" />
     <SUITE FILE_PATH="coverage/csc148$Doctest_LinkedListRec___setitem__.coverage" NAME="Doctest LinkedListRec.__setitem__ Coverage Results" MODIFIED="1477622495680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab7" />
     <SUITE FILE_PATH="coverage/csc148$Unittests_in_KthSmallestTest.coverage" NAME="Unittests in KthSmallestTest Coverage Results" MODIFIED="1480291991491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises/ex7" />
@@ -95,24 +97,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="tree_data.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tree_data.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assignments/Assignment2/tree_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="125" column="34" selection-start-line="125" selection-start-column="34" selection-end-line="125" selection-end-column="34" />
+            <state relative-caret-position="136">
+              <caret line="237" column="33" selection-start-line="237" selection-start-column="33" selection-end-line="237" selection-end-column="111" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="treemap_visualiser.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="treemap_visualiser.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assignments/Assignment2/treemap_visualiser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="134" column="17" selection-start-line="134" selection-start-column="17" selection-end-line="134" selection-end-column="17" />
-              <folding>
-                <marker date="1480473353829" expanded="true" signature="4223:4383" ph="..." />
-              </folding>
+            <state relative-caret-position="170">
+              <caret line="202" column="0" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -178,11 +178,11 @@
         <option value="$PROJECT_DIR$/labs/lab9/bst.py" />
         <option value="$PROJECT_DIR$/exercises/ex6/ex6_test.py" />
         <option value="$PROJECT_DIR$/exercises/ex6/ex6.py" />
-        <option value="$PROJECT_DIR$/labs/lab8/tiling.py" />
         <option value="$PROJECT_DIR$/exercises/ex7/ex7_test.py" />
         <option value="$PROJECT_DIR$/exercises/ex7/ex7.py" />
-        <option value="$PROJECT_DIR$/assignments/Assignment2/treemap_visualiser.py" />
+        <option value="$PROJECT_DIR$/labs/lab8/tiling.py" />
         <option value="$PROJECT_DIR$/assignments/Assignment2/tree_data.py" />
+        <option value="$PROJECT_DIR$/assignments/Assignment2/treemap_visualiser.py" />
       </list>
     </option>
   </component>
@@ -245,19 +245,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="csc148" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches">
-        <subPane />
-      </pane>
       <pane id="Scope">
         <subPane subId="Problems" />
         <subPane subId="Project Files">
@@ -319,6 +306,29 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches">
+        <subPane />
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="csc148" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="csc148" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="csc148" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -352,7 +362,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Doctest FileSystemTree.__init__">
+  <component name="RunManager" selected="Python.treemap_visualiser">
     <configuration default="false" name="Unittest KthSmallestTest.test_correct_given_valid_k" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -694,8 +704,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Doctest FileSystemTree.__init__" />
-        <item index="1" class="java.lang.String" itemvalue="Python.treemap_visualiser" />
+        <item index="0" class="java.lang.String" itemvalue="Python.treemap_visualiser" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Doctest FileSystemTree.__init__" />
         <item index="2" class="java.lang.String" itemvalue="Python.tiling" />
         <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in ex7_test" />
         <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest KthSmallestTest.test_correct_given_valid_k" />
@@ -719,34 +729,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Doctest_FileSystemTree___init__ - 2016.11.29 at 23h 12m 43s.xml">
-      <configuration name="Doctest FileSystemTree.__init__" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Doctest_FileSystemTree___init__ - 2016.11.29 at 23h 13m 15s.xml">
-      <configuration name="Doctest FileSystemTree.__init__" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Doctest_FileSystemTree___init__ - 2016.11.29 at 23h 13m 32s.xml">
-      <configuration name="Doctest FileSystemTree.__init__" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Doctest_FileSystemTree___init__ - 2016.11.29 at 23h 15m 35s.xml">
-      <configuration name="Doctest FileSystemTree.__init__" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Doctest_FileSystemTree___init__ - 2016.11.29 at 23h 15m 55s.xml">
-      <configuration name="Doctest FileSystemTree.__init__" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Doctest_FileSystemTree___init__ - 2016.11.29 at 23h 17m 17s.xml">
-      <configuration name="Doctest FileSystemTree.__init__" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Doctest_FileSystemTree___init__ - 2016.11.29 at 23h 19m 25s.xml">
-      <configuration name="Doctest FileSystemTree.__init__" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Doctest_FileSystemTree___init__ - 2016.11.29 at 23h 20m 18s.xml">
-      <configuration name="Doctest FileSystemTree.__init__" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Doctest_FileSystemTree___init__ - 2016.11.29 at 23h 24m 15s.xml">
-      <configuration name="Doctest FileSystemTree.__init__" configurationId="tests" />
-    </history-entry>
     <history-entry file="Doctest_FileSystemTree___init__ - 2016.11.29 at 23h 25m 19s.xml">
+      <configuration name="Doctest FileSystemTree.__init__" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctest_FileSystemTree___init__ - 2016.11.30 at 09h 00m 00s.xml">
+      <configuration name="Doctest FileSystemTree.__init__" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctest_FileSystemTree___init__ - 2016.11.30 at 21h 02m 51s.xml">
+      <configuration name="Doctest FileSystemTree.__init__" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctest_FileSystemTree___init__ - 2016.12.01 at 08h 52m 56s.xml">
+      <configuration name="Doctest FileSystemTree.__init__" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctest_FileSystemTree___init__ - 2016.12.01 at 08h 53m 21s.xml">
+      <configuration name="Doctest FileSystemTree.__init__" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctest_FileSystemTree___init__ - 2016.12.01 at 16h 13m 26s.xml">
+      <configuration name="Doctest FileSystemTree.__init__" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctest_FileSystemTree___init__ - 2016.12.01 at 16h 14m 55s.xml">
+      <configuration name="Doctest FileSystemTree.__init__" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctest_FileSystemTree___init__ - 2016.12.01 at 16h 15m 39s.xml">
+      <configuration name="Doctest FileSystemTree.__init__" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctest_FileSystemTree___init__ - 2016.12.01 at 16h 19m 25s.xml">
+      <configuration name="Doctest FileSystemTree.__init__" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctest_FileSystemTree___init__ - 2016.12.01 at 16h 19m 38s.xml">
       <configuration name="Doctest FileSystemTree.__init__" configurationId="tests" />
     </history-entry>
   </component>
@@ -798,7 +808,7 @@
       <window_info id="Inspection" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4946695" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847533" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.665529" sideWeight="0.5014675" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5" sideWeight="0.4985325" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5" sideWeight="0.4985325" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Course Description" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24919094" sideWeight="0.50079745" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32977304" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16048448" sideWeight="0.49760765" order="0" side_tool="false" content_ui="combo" />
@@ -845,8 +855,13 @@
           <line>95</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/assignments/Assignment2/tree_data.py</url>
+          <line>57</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="76" />
+      <option name="time" value="81" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -855,7 +870,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assignments/Assignment1/data/truck-data-small.txt" />
     <entry file="file://$PROJECT_DIR$/assignments/Assignment1/explore.py" />
     <entry file="file://$PROJECT_DIR$/exercises/ex2/ex2.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1034,20 +1048,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/labs/lab8/tree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labs/lab9/bst.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="419" column="11" selection-start-line="419" selection-start-column="11" selection-end-line="419" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/labs/lab9/profile_bst.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1118,19 +1118,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/labs/lab8/tiling.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="165" column="22" selection-start-line="165" selection-start-column="21" selection-end-line="165" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/exercises/ex7/ex7_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1138,7 +1129,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="70" column="17" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1146,24 +1136,49 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
           <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labs/lab8/tiling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="118" column="45" selection-start-line="118" selection-start-column="45" selection-end-line="118" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exercises/ex2/pylintrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labs/lab9/bst.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="419" column="11" selection-start-line="419" selection-start-column="11" selection-end-line="419" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labs/lab8/tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2091">
+          <caret line="147" column="9" selection-start-line="147" selection-start-column="8" selection-end-line="147" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assignments/Assignment2/tree_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="237" column="33" selection-start-line="237" selection-start-column="33" selection-end-line="237" selection-end-column="111" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assignments/Assignment2/treemap_visualiser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="134" column="17" selection-start-line="134" selection-start-column="17" selection-end-line="134" selection-end-column="17" />
-          <folding>
-            <marker date="1480473353829" expanded="true" signature="4223:4383" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assignments/Assignment2/tree_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="125" column="34" selection-start-line="125" selection-start-column="34" selection-end-line="125" selection-end-column="34" />
+        <state relative-caret-position="170">
+          <caret line="202" column="0" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
           <folding />
         </state>
       </provider>
