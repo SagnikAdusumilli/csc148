@@ -127,34 +127,38 @@ class AbstractTree:
         else:
             x, y, width, height = rect
             rect_lst = []
-            pos_x = x
-            pos_y = y
+            pos_x = 0
+            pos_y = 0
 
             for i in range(len(self._subtrees)):
-                sub_tree = self._subtrees[i]
 
-                if i < len(self._subtrees) - 1:
-                    percent_area = sub_tree.data_size / self.data_size
+                subtree = self._subtrees[i]
+                percent_area = subtree.data_size/self.data_size
+
+                if i == len(self._subtrees) - 1:
+                    if width > height:
+                        rect_lst.extend(subtree.generate_treemap((x + pos_x, y, width - pos_x, height)))
+                    else:
+                        rect_lst.extend(subtree.generate_treemap((x, y + pos_y, width, height - pos_y)))
+                else:
                     if width > height:
                         new_width = int(percent_area * width)
-                        rect_lst.extend(sub_tree.generate_treemap((pos_x, pos_y, new_width, height)))
+                        rect_lst.extend(subtree.generate_treemap((x + pos_x, y, new_width, height)))
                         pos_x += new_width
                     else:
                         new_height = int(percent_area * height)
-                        rect_lst.extend(sub_tree.generate_treemap((pos_x, pos_y, width, new_height)))
+                        rect_lst.extend(subtree.generate_treemap((x, y + pos_y, width, new_height)))
                         pos_y += new_height
-                else:
-                    # this is the last sub_tree
-                    if width > height:
-                        rect_lst.extend(sub_tree.generate_treemap((pos_x, pos_y, width - pos_x, height)))
-                    else:
-                        rect_lst.extend(sub_tree.generate_treemap((pos_x, pos_y, width, height - pos_y)))
+
+                assert pos_x <= width, str(pos_x) + ' ' + str(width)
+                assert pos_y <= height, str(pos_y) + ' ' + str(height)
 
             return rect_lst
 
     def get_separator(self):
         """Return the string used to separate nodes in the string
         representation of a path from the tree root to a leaf.
+
 
         Used by the treemap visualiser to generate a string displaying
         the items from the root of the tree to the currently selected leaf.
@@ -191,14 +195,29 @@ class AbstractTree:
             leaf._subtrees == []
         """
         if self._root == leaf._root:
-            self._parent_tree.data_size = self._parent_tree.data_size - self.data_size
 
-            subtrees = self._parent_tree.get_subtrees()
-            for tree in subtrees:
-                if tree == leaf:
-                    subtrees.remove(leaf)
+            if self._parent_tree is None:
+                self.data_size = 0
+                return None
+            # remove the leaf from the subtrees of FileSystemTree
+            else:
+                subtrees = self._parent_tree.get_subtrees()
+                for tree in subtrees:
+                    if tree == leaf:
+                        subtrees.remove(leaf)
 
-            leaf._parent_tree = None
+                if len(subtrees) == 0:
+                    print("delete immidiate parent")
+                    self.get_parent_tree().delete_leaf(self.get_parent_tree())
+
+            # remvove the size from all the parent nodes
+            current = self._parent_tree
+
+            while current is not None:
+                current.data_size = current.data_size - self.data_size
+                current = current.get_parent_tree()
+
+                leaf._parent_tree = None
         else:
             for tree in self._subtrees:
                 tree.delete_leaf(leaf)
@@ -209,6 +228,13 @@ class AbstractTree:
         @rtype [AbstractTree]
         """
         return self._subtrees
+
+    def get_parent_tree(self):
+        """return the parent tree of this tree
+        @type self: AbstractTree
+        @rtype: AbstractTree
+        """
+        return self._parent_tree
 
 
 class FileSystemTree(AbstractTree):
@@ -232,12 +258,9 @@ class FileSystemTree(AbstractTree):
         @type self: FileSystemTree
         @type path: str
         @rtype: None
-        >>> t1 = FileSystemTree('C:/Users/Sagnik/Documents/U of T/Courses/Csc165/e1.pdf')
-        >>> t1.data_size
-        55433
-        >>> t2 = FileSystemTree('C:/Users/Sagnik/Documents/U of T/Courses/CSC148/csc148/assignments/Assignment1')
+        >>> t2 = FileSystemTree('/h/u8/c6/01/adusumil/Desktop/csc148/assignments/Assignment')
         >>> t2.data_size
-        68867
+        8657
         """
         # Remember that you should recursively go through the file system
         # and create new FileSystemTree objects for each file and folder
@@ -256,7 +279,7 @@ class FileSystemTree(AbstractTree):
                 tree = FileSystemTree(os.path.join(path, sub_dir))
                 sub_trees.append(tree)
 
-            AbstractTree.__init__(self, os.path.basename(path), sub_trees, 0)
+            AbstractTree.__init__(self, os.path.basename(path), sub_trees)
 
     def get_separator(self):
         """

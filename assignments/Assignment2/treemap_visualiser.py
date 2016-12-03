@@ -35,7 +35,7 @@ def run_visualisation(tree):
     """
     # Setup pygame
     pygame.init()
-    screen = pygame.display.set_mode((WIDTH, HEIGHT))
+    screen = pygame.display.set_mode((2000, 2000))
 
     # Render the initial display of the static treemap.
     render_display(screen, tree, '')
@@ -59,7 +59,7 @@ def render_display(screen, tree, text):
     # First, clear the screen
     pygame.draw.rect(screen, pygame.color.THECOLORS['black'],
                      (0, 0, WIDTH, HEIGHT))
-    # TODO: Implement this function!
+
     # get all the rectangles of the tree
     rects = tree.generate_treemap((0, 0, WIDTH, TREEMAP_HEIGHT))
 
@@ -121,10 +121,6 @@ def event_loop(screen, tree):
             pygame.quit()
             return
 
-        # TODO: detect and respond to other types of events.
-        # Remember to call render_display if any data_sizes change,
-        # as the treemap will change in this case.
-
         elif event.type == pygame.MOUSEBUTTONUP:
             clicked_leaf = None
             # get the color of the pixel
@@ -153,15 +149,14 @@ def event_loop(screen, tree):
                     tree.delete_leaf(selected_leaf)
                     selected_leaf = None
                     render_display(screen, tree, '')
-                else:
-                    if clicked_leaf is not None:
-                        tree.delete_leaf(clicked_leaf)
-                        if selected_leaf is not None:
-                            render_display(screen, tree,
-                                           selected_leaf.get_separator() + " (" + str(selected_leaf.data_size)
-                                           + ")")
-                        else:
-                            render_display(screen, tree, '')
+                elif clicked_leaf is not None:
+                    tree.delete_leaf(clicked_leaf)
+                    if selected_leaf is not None:
+                        render_display(screen, tree,
+                                       selected_leaf.get_separator() + " (" + str(selected_leaf.data_size)
+                                       + ")")
+                    else:
+                        render_display(screen, tree, '')
 
 
 def run_treemap_file_system(path):
@@ -196,7 +191,7 @@ if __name__ == '__main__':
     # 'C:\\Users\\David\\Documents\\csc148\\assignments' (Windows) or
     # '/Users/dianeh/Documents/courses/csc148/assignments' (OSX)
     # C:/Users/Sagnik/Documents/U of T/Courses/CSC148/csc148/assignments/Assignment1
-    run_treemap_file_system('C:/Users/Sagnik/Documents/U of T/Courses/CSC148/csc148/exercises')
+    run_treemap_file_system('/h/u8/c6/01/adusumil/Desktop/csc148/assignments/Assignment2')
 
     # To check your work for Task 5, uncomment the following function call.
     # run_treemap_population()
