@@ -38,7 +38,6 @@ import urllib.request as request
 
 from tree_data import AbstractTree
 
-
 # Constants for the World Bank API urls.
 WORLD_BANK_BASE = 'http://api.worldbank.org/countries'
 WORLD_BANK_POPULATIONS = (
@@ -63,6 +62,13 @@ class PopulationTree(AbstractTree):
 
     See https://datahelpdesk.worldbank.org/ for details about this API.
     """
+
+    def get_separator(self):
+        """Return the name of the country
+        @rtype str
+        """
+        return self._root
+
     def __init__(self, world, root=None, subtrees=None, data_size=0):
         """Initialize a new PopulationTree.
 
@@ -100,7 +106,6 @@ def _load_data():
     country_populations = _get_population_data()
     regions = _get_region_data()
 
-    # TODO: create PopulationTree objects for each country and region.
     # Be sure to read the docstring of the PopulationTree constructor to see
     # how to call it.
     # You'll want to complete the two helpers called above first (otherwise
@@ -109,6 +114,23 @@ def _load_data():
     # Remember that each region tree has only two levels:
     #   - a root storing the name of the region
     #   - zero or more leaves, each representing a country in the region
+
+    lst = []
+    for region in regions.keys():
+        # get the list of country
+        countries = regions[region]
+        # print(regions[region])
+
+        subtrees = []
+        for country in countries:
+            # create the leaf
+            if country in country_populations:
+                subtrees.append(PopulationTree(False, country, None, country_populations[country]))
+
+        if subtrees != []:
+            lst.append(PopulationTree(False, region, subtrees))
+
+    return lst
 
 
 def _get_population_data():
@@ -134,7 +156,15 @@ def _get_population_data():
     # population_data.
     countries = {}
 
-    # TODO: Complete this function.
+    for element in population_data:
+        population = element['value']
+
+        if isinstance(population, str):
+            country_name = element['country']['value']
+            population = int(element['value'])
+
+            if population != 0:
+                countries[country_name] = population
 
     return countries
 
@@ -156,8 +186,15 @@ def _get_region_data():
     # the contents of country_data.
     regions = {}
 
-    # TODO: Complete this function.
-
+    for element in country_data:
+        region_name = element['region']['value']
+        if 'name' in element:
+            country = element['name']
+            if country is not None:
+                if regions.get(region_name) is None:
+                    regions[region_name] = [country]
+                else:
+                    regions[region_name].append(country)
     return regions
 
 
@@ -175,5 +212,9 @@ def _get_json_data(url):
 
 if __name__ == '__main__':
     import python_ta
+
+    # print(_get_population_data())
+    # print(_get_region_data())
+    tree = PopulationTree(True)
     # Remember to change this to check_all when cleaning up your code.
-    python_ta.check_errors(config='pylintrc.txt')
+    python_ta.check_errors(config='check_all')

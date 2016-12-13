@@ -49,8 +49,6 @@ def reverse(stack):
             stack.push(item)
 
 
-
-
 def merge_alternating(stack1, stack2):
     """Return a stack by merging two stacks in alternating order.
 
@@ -106,7 +104,6 @@ def merge_alternating(stack1, stack2):
     reverse(copy2)
 
     while not copy2.is_empty() and not copy1.is_empty():
-
         merged_stack.push(copy2.pop())
         merged_stack.push(copy1.pop())
 
@@ -149,6 +146,7 @@ class Person:
         The next person in the chain, or None if this person is not holding
         onto anyone.
     """
+
     def __init__(self, name):
         """Create a person who is initially not holding onto anyone.
 
@@ -167,6 +165,7 @@ class PeopleChain:
     @type leader: Person | None
         The first person in the chain, or None if the chain is empty.
     """
+
     def __init__(self, names):
         """Create people linked together in the order provided in <names>.
 
@@ -191,7 +190,6 @@ class PeopleChain:
                 # the LAST person in the chain
                 current_person = current_person.next
 
-    # TODO: Implement the following four methods!
     def get_leader(self):
         """Return the name of the leader of the chain.
 
@@ -257,11 +255,10 @@ class PeopleChain:
         # for _ in range(10):
         #     <code that doesn't use the index>
         current_person = self.leader
-        for _ in range(n-1):
+        for _ in range(n - 1):
             if current_person is None:
                 raise ShortChainError
             current_person = current_person.next
-
 
         if current_person is None:
             raise ShortChainError
@@ -269,9 +266,9 @@ class PeopleChain:
             return current_person.name
 
 
-
 if __name__ == '__main__':
     import python_ta
+
     python_ta.check_errors(config='.pylintrc')
     # python_ta.check_all(config='.pylintrc')
 

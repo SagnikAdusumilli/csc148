@@ -13,13 +13,14 @@ and detecting user events like mouse clicks and key presses and responding
 to them.
 """
 import pygame
+import math
 from tree_data import FileSystemTree
 from population import PopulationTree
 
 # Screen dimensions and coordinates
 ORIGIN = (0, 0)
 WIDTH = 1024
-HEIGHT = 600
+HEIGHT = 720
 FONT_HEIGHT = 30  # The height of the text display.
 TREEMAP_HEIGHT = HEIGHT - FONT_HEIGHT  # The height of the treemap display.
 
@@ -35,7 +36,7 @@ def run_visualisation(tree):
     """
     # Setup pygame
     pygame.init()
-    screen = pygame.display.set_mode((2000, 2000))
+    screen = pygame.display.set_mode((WIDTH, HEIGHT))
 
     # Render the initial display of the static treemap.
     render_display(screen, tree, '')
@@ -69,8 +70,8 @@ def render_display(screen, tree, text):
         dimentions = rect[0]
         color = rect[1]
 
-        assert len(dimentions) == 4 and len(color) == 3, str(dimentions) + ' ' + str(color)
-        pygame.draw.rect(screen, color, dimentions)
+        # so that it can draw really small rectangles
+        screen.fill(color, dimentions)
 
     _render_text(screen, text)
 
@@ -111,8 +112,6 @@ def event_loop(screen, tree):
     # But feel free to remove it, and/or add new variables, to help keep
     # track of the state of the program.
     selected_leaf = None
-    display_text = 'hello'
-    _render_text(screen, display_text)
 
     while True:
         # Wait for an event
@@ -132,7 +131,7 @@ def event_loop(screen, tree):
 
             # find the leaf with the corresponding color
             for leaf in leaves:
-                if leaf.color == color:
+                if leaf.colour == color:
                     clicked_leaf = leaf
 
             # check for left-click
@@ -145,18 +144,37 @@ def event_loop(screen, tree):
 
             # check for right-click
             if event.button == 3:
-                if clicked_leaf == selected_leaf and clicked_leaf is not None:
-                    tree.delete_leaf(selected_leaf)
-                    selected_leaf = None
-                    render_display(screen, tree, '')
-                elif clicked_leaf is not None:
-                    tree.delete_leaf(clicked_leaf)
-                    if selected_leaf is not None:
-                        render_display(screen, tree,
-                                       selected_leaf.get_separator() + " (" + str(selected_leaf.data_size)
-                                       + ")")
-                    else:
+                if clicked_leaf is not None:
+
+                    if clicked_leaf == selected_leaf:
+                        tree.delete_leaf(selected_leaf)
+                        selected_leaf = None
                         render_display(screen, tree, '')
+                    else:
+                        tree.delete_leaf(clicked_leaf)
+                        if selected_leaf is not None:
+                            render_display(screen, tree,
+                                           selected_leaf.get_separator() + " (" + str(selected_leaf.data_size)
+                                           + ")")
+                        else:
+                            render_display(screen, tree, '')
+
+        elif event.type == pygame.KEYUP:
+            if selected_leaf is not None:
+                # check for up arrow
+                amount = math.ceil(0.01 * selected_leaf.data_size)
+
+                if event.key == pygame.K_UP:
+                    # increase area
+                    selected_leaf.update_by_amount(amount, True)
+
+                elif event.key == pygame.K_DOWN:
+                    # decrease area
+                    if selected_leaf.data_size - amount >= 1:
+                        selected_leaf.update_by_amount(amount, False)
+
+                render_display(screen, tree,
+                               selected_leaf.get_separator() + " (" + str(selected_leaf.data_size) + " )")
 
 
 def run_treemap_file_system(path):
@@ -184,14 +202,14 @@ if __name__ == '__main__':
     import python_ta
 
     # Remember to change this to check_all when cleaning up your code.
-    python_ta.check_errors(config='pylintrc.txt')
+    python_ta.check_errors(config='check_all')
 
     # To check your work for Tasks 1-4, try uncommenting the following function
     # call, with the '' replaced by a path like
     # 'C:\\Users\\David\\Documents\\csc148\\assignments' (Windows) or
     # '/Users/dianeh/Documents/courses/csc148/assignments' (OSX)
-    # C:/Users/Sagnik/Documents/U of T/Courses/CSC148/csc148/assignments/Assignment1
-    run_treemap_file_system('/h/u8/c6/01/adusumil/Desktop/csc148/assignments/Assignment2')
+    # path = 'C:/Users/Sagnik/Documents/U of T/Courses/CSC148/csc148'
+    # run_treemap_file_system(path)
 
     # To check your work for Task 5, uncomment the following function call.
     # run_treemap_population()

@@ -13,6 +13,7 @@ computer's file system.
 """
 import os
 from random import randint
+import math
 
 
 class AbstractTree:
@@ -27,7 +28,7 @@ class AbstractTree:
     === Public Attributes ===
     @type data_size: int
         The total size of all leaves of this tree.
-    @type color: (int, int, int)
+    @type colour: (int, int, int)
         The RGB colour value of the root of this tree.
         Note: only the colours of leaves will influence what the user sees.
 
@@ -81,11 +82,12 @@ class AbstractTree:
         self._parent_tree = None
 
         # 1. Initialize self.colour and self.data_size, according to the docstring.
-        self.color = (randint(30, 255), randint(30, 255), randint(30, 255))
+        self.colour = (randint(20, 255), randint(20, 255), randint(20, 255))
         if self._subtrees == []:
             self.data_size = data_size
         else:
             # 2. Properly set all _parent_tree attributes in self._subtrees
+            self.data_size = 0
             for tree in subtrees:
                 self.data_size += tree.data_size
                 tree._parent_tree = self
@@ -118,35 +120,47 @@ class AbstractTree:
         # coordinates of a rectangle, as follows.
         # x, y, width, height = rect
 
-        # if the size is 0:
         if self.data_size == 0:
             return []
         # if self is a leaf
         elif self._subtrees == []:
-            return [(rect, self.color)]
+            return [(rect, self.colour)]
         else:
             x, y, width, height = rect
             rect_lst = []
             pos_x = 0
             pos_y = 0
 
-            for i in range(len(self._subtrees)):
+            subtrees_copy = []
 
-                subtree = self._subtrees[i]
+            for tree in self._subtrees:
+                subtrees_copy.append(tree)
+
+            # incase there are empty folders with are present in the end
+            # because they will create black spaces
+            while subtrees_copy[len(subtrees_copy)-1].data_size == 0:
+                subtrees_copy.pop()
+                if len(subtrees_copy) == 1:
+                    break
+
+            for i in range(len(subtrees_copy)):
+                subtree = subtrees_copy[i]
                 percent_area = subtree.data_size/self.data_size
 
-                if i == len(self._subtrees) - 1:
+                # set the last rectangle to fill the remaining space
+                if i == len(subtrees_copy) - 1:
+                    assert subtree.data_size > 0
                     if width > height:
                         rect_lst.extend(subtree.generate_treemap((x + pos_x, y, width - pos_x, height)))
                     else:
                         rect_lst.extend(subtree.generate_treemap((x, y + pos_y, width, height - pos_y)))
                 else:
                     if width > height:
-                        new_width = int(percent_area * width)
+                        new_width = math.floor(percent_area * width)
                         rect_lst.extend(subtree.generate_treemap((x + pos_x, y, new_width, height)))
                         pos_x += new_width
                     else:
-                        new_height = int(percent_area * height)
+                        new_height = math.floor(percent_area * height)
                         rect_lst.extend(subtree.generate_treemap((x, y + pos_y, width, new_height)))
                         pos_y += new_height
 
@@ -194,30 +208,8 @@ class AbstractTree:
         Precondtions:
             leaf._subtrees == []
         """
-        if self._root == leaf._root:
-
-            if self._parent_tree is None:
-                self.data_size = 0
-                return None
-            # remove the leaf from the subtrees of FileSystemTree
-            else:
-                subtrees = self._parent_tree.get_subtrees()
-                for tree in subtrees:
-                    if tree == leaf:
-                        subtrees.remove(leaf)
-
-                if len(subtrees) == 0:
-                    print("delete immidiate parent")
-                    self.get_parent_tree().delete_leaf(self.get_parent_tree())
-
-            # remvove the size from all the parent nodes
-            current = self._parent_tree
-
-            while current is not None:
-                current.data_size = current.data_size - self.data_size
-                current = current.get_parent_tree()
-
-                leaf._parent_tree = None
+        if self is leaf:
+            self.update_by_amount(self.data_size, False)
         else:
             for tree in self._subtrees:
                 tree.delete_leaf(leaf)
@@ -235,6 +227,31 @@ class AbstractTree:
         @rtype: AbstractTree
         """
         return self._parent_tree
+
+    def update_by_amount(self, amnt, increase):
+        """Increase or decrese the
+        the <data_size> by <amt> and update the size of the parents
+        increase if increase is True
+        @type self: AbstractTree
+        @type increase: bool
+        @type amnt: int
+        @rtype None
+        """
+        # increse the amount of <self>
+        if increase:
+            self.data_size += amnt
+        else:
+            self.data_size -= amnt
+
+        # increase the amount of all the parents
+        current = self.get_parent_tree()
+        while current is not None:
+            if increase:
+                current.data_size += amnt
+            else:
+                current.data_size -= amnt
+
+            current = current.get_parent_tree()
 
 
 class FileSystemTree(AbstractTree):
@@ -258,9 +275,12 @@ class FileSystemTree(AbstractTree):
         @type self: FileSystemTree
         @type path: str
         @rtype: None
-        >>> t2 = FileSystemTree('/h/u8/c6/01/adusumil/Desktop/csc148/assignments/Assignment')
+        >>> t2 = FileSystemTree('C:/Users/Sagnik/Documents/U of T/Courses/assignments/Assignment1')
         >>> t2.data_size
-        8657
+        68867
+        >>> t3 = FileSystemTree('C:/Users/Sagnik/Documents/Arduino')
+        >>> t3.data_size
+        1848
         """
         # Remember that you should recursively go through the file system
         # and create new FileSystemTree objects for each file and folder
@@ -271,15 +291,18 @@ class FileSystemTree(AbstractTree):
         # check if it is a file, it will contain a dot
         if os.path.isfile(path):
             AbstractTree.__init__(self, os.path.basename(path), [], os.path.getsize(path))
+
         else:
             dirs = os.listdir(path)
             sub_trees = []
-            self.data_size = 0
             for sub_dir in dirs:
                 tree = FileSystemTree(os.path.join(path, sub_dir))
                 sub_trees.append(tree)
 
             AbstractTree.__init__(self, os.path.basename(path), sub_trees)
+
+            for tree in sub_trees:
+                assert tree.get_parent_tree() is not None
 
     def get_separator(self):
         """
@@ -300,4 +323,4 @@ if __name__ == '__main__':
     import python_ta
 
     # Remember to change this to check_all when cleaning up your code.
-    python_ta.check_errors(config='pylintrc.txt')
+    python_ta.check_errors(config='check_all')

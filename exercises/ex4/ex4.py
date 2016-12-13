@@ -13,6 +13,8 @@ It is divided into two parts:
 - Task 2, which asks you to learn about a new recursive structure, a family
   tree, and write a method that operates on this structure.
 """
+
+
 ##############################################################################
 # Task 1: More practice with nested lists
 ##############################################################################
@@ -50,6 +52,7 @@ def duplicate(nested_list):
 
         return lst
 
+
 def add_one(nested_list):
     """Add one to every number stored in <nested_list>.
 
@@ -84,7 +87,6 @@ def add_one(nested_list):
                 add_one(nested_list[i])
 
 
-
 ##############################################################################
 # Task 2: Family trees
 ##############################################################################
@@ -97,6 +99,7 @@ class Person:
     @type children: list[Person]
         The children of this person.
     """
+
     def __init__(self, new_name, new_children):
         """Create a new person with the given name and children.
 
@@ -108,7 +111,6 @@ class Person:
         self.name = new_name
         self.children = new_children
 
-    # TODO: Implement this!
     def count_descendants(self):
         """Return the number of descendants of this person.
 
@@ -121,14 +123,16 @@ class Person:
             count = len(self.children)
 
             for child in self.children:
-               count += child.count_descendants()
+                count += child.count_descendants()
 
             return count
 
 
 if __name__ == '__main__':
     import doctest
+
     doctest.testmod()
 
     import python_ta
+
     python_ta.check_all()
